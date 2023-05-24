@@ -1,0 +1,7 @@
+
+
+java:S1319+"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ò±âÇ8î¨§û„1
+„
+java:S1319/"gThe type of "friends" should be an interface such as "List" rather than the implementation "ArrayList".(±Û„«8ï¨§û„1
+N
+java:S1068",Remove this unused "password" private field.(œãë­úÿÿÿÿ8ı¨§û„1

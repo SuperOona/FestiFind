@@ -1,5 +1,4 @@
-import domain.Festival;
-import domain.Stage;
+import main.java.festi.model.Festival;
 
 import java.util.ArrayList;
 import java.util.Date;

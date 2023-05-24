@@ -1,4 +1,4 @@
-package domain;
+package main.java.festi.model;
 
 import java.util.ArrayList;
 import java.util.Date;

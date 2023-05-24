@@ -1,0 +1,9 @@
+
+
+java:S1319"dThe type of "date" should be an interface such as "List" rather than the implementation "ArrayList".(Ã¸¸¾8Û‚”Ó„1
+’
+java:S1319 "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(«“Ñ¡úÿÿÿÿ8Û‚”Ó„1
+
+java:S1319$"dThe type of "date" should be an interface such as "List" rather than the implementation "ArrayList".(¨ÑÍü8Û‚”Ó„1
+’
+java:S1319("pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ùğ±ûÿÿÿÿ8Û‚”Ó„1

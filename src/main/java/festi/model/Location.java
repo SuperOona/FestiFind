@@ -1,4 +1,4 @@
-package domain;
+package main.java.festi.model;
 
 import java.util.UUID;
 
@@ -6,14 +6,12 @@ public class Location {
     private String locationId;
     private Stage stage;
     private Account account;
-    private FriendGroep friendGroep;
     private Placing placing;
 
-    public Location(Stage stage, Account account, FriendGroep friendGroep, Placing placing) {
+    public Location(Stage stage, Account account, Placing placing) {
         this.locationId = UUID.randomUUID().toString();
         this.stage = stage;
         this.account = account;
-        this.friendGroep = friendGroep;
         this.placing = placing;
     }
 
@@ -35,14 +33,6 @@ public class Location {
 
     public void setAccount(Account account) {
         this.account = account;
-    }
-
-    public FriendGroep getFriendGroep() {
-        return friendGroep;
-    }
-
-    public void setFriendGroep(FriendGroep friendGroep) {
-        this.friendGroep = friendGroep;
     }
 
     public Placing getPlacing() {

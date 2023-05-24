@@ -1,4 +1,4 @@
-package domain;
+package main.java.festi.model;
 
 public class Artist {
     private String name;

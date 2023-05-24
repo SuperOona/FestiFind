@@ -1,0 +1,13 @@
+
+†
+java:S1319"iThe type of "locations" should be an interface such as "List" rather than the implementation "ArrayList".(¹ºã8ñß¸Ò„1
+„
+java:S1319"gThe type of "friends" should be an interface such as "List" rather than the implementation "ArrayList".(¹ºã8ñß¸Ò„1
+
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ØÖ×¢8Á×şÒ„1
+…
+java:S1319#"iThe type of "locations" should be an interface such as "List" rather than the implementation "ArrayList".(‡ÏÖ8Á×şÒ„1
+
+java:S1319'"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ò±âÇ8Á×şÒ„1
+„
+java:S1319+"gThe type of "friends" should be an interface such as "List" rather than the implementation "ArrayList".(±Û„«8Á×şÒ„1
