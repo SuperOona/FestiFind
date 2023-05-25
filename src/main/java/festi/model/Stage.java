@@ -1,20 +1,19 @@
 package festi.model;
 
+import java.util.ArrayList;
 import java.util.UUID;
-import festi.model.Festival;
-import festi.model.Artist;
 
 public class Stage{
     private String stageId;
     private String stageName;
     private Festival festival;
-    private Artist artist;
+    private ArrayList<Artist> artists;
 
-    public Stage( String stageName, Festival festival, Artist artist) {
+    public Stage( String stageName, Festival festival) {
         this.stageId = UUID.randomUUID().toString();
         this.stageName = stageName;
         this.festival = festival;
-        this.artist = artist;
+
     }
 
     public String getStageId() {
@@ -37,12 +36,14 @@ public class Stage{
         this.festival = festival;
     }
 
-    public Artist getArtist() {
-        return artist;
+    public ArrayList<Artist> getArtist() {
+        return artists;
     }
 
-    public void setArtist(Artist artist) {
-        this.artist = artist;
+    public void addArtist(Artist artist) {
+        if(!artists.contains(artist)){
+            artists.add(artist);
+        }
     }
 }
 

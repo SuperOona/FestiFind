@@ -43,6 +43,9 @@ public class Location {
     }
 
     public void setPlacing(Placing placing) {
+        if(stage.getStageName() == "camping"){
+            this.placing = null;
+        }
         this.placing = placing;
     }
 }
