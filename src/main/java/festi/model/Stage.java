@@ -9,12 +9,13 @@ public class Stage{
     private Festival festival;
     private ArrayList<Artist> artists;
 
-    public Stage( String stageName, Festival festival) {
+    public Stage( String stageName, Festival festival, ArrayList<Artist> artists) {
         this.stageId = UUID.randomUUID().toString();
         this.stageName = stageName;
         this.festival = festival;
-
+        this.artists = artists;
     }
+
 
     public String getStageId() {
         return stageId;

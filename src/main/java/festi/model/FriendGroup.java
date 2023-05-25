@@ -2,17 +2,14 @@ package festi.model;
 
 import java.util.ArrayList;
 import java.util.UUID;
-import festi.model.Festival;
-import festi.model.Location;
-import festi.model.Account;
 
-public class FriendGroep {
+public class FriendGroup {
     private String friendGroupId;
     private Festival festival;
     private ArrayList<Location> locations;
-    private ArrayList<Account> friends;
+    private ArrayList<User> friends;
 
-    public FriendGroep(Festival festival, ArrayList<Location> locations, ArrayList<Account> friends) {
+    public FriendGroup(Festival festival, ArrayList<Location> locations, ArrayList<User> friends) {
         this.friendGroupId = UUID.randomUUID().toString();
         this.festival = festival;
         this.locations = locations;
@@ -39,11 +36,11 @@ public class FriendGroep {
         this.locations = locations;
     }
 
-    public ArrayList<Account> getFriends() {
+    public ArrayList<User> getFriends() {
         return friends;
     }
 
-    public void setFriends(ArrayList<Account> friends) {
+    public void setFriends(ArrayList<User> friends) {
         this.friends = friends;
     }
 }

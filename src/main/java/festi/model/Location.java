@@ -1,21 +1,17 @@
 package festi.model;
 
 import java.util.UUID;
-import festi.model.Stage;
-import festi.model.Account;
-import festi.model.Placing;
 
 public class Location {
     private String locationId;
     private Stage stage;
-    private Account account;
+    private User user;
     private Placing placing;
 
-    public Location(Stage stage, Account account, Placing placing) {
+    public Location(Stage stage, User user) {
         this.locationId = UUID.randomUUID().toString();
         this.stage = stage;
-        this.account = account;
-        this.placing = placing;
+        this.user = user;
     }
 
     public String getLocationId() {
@@ -30,12 +26,12 @@ public class Location {
         this.stage = stage;
     }
 
-    public Account getAccount() {
-        return account;
+    public User getAccount() {
+        return user;
     }
 
-    public void setAccount(Account account) {
-        this.account = account;
+    public void setAccount(User user) {
+        this.user = user;
     }
 
     public Placing getPlacing() {
@@ -43,9 +39,9 @@ public class Location {
     }
 
     public void setPlacing(Placing placing) {
-        if(stage.getStageName() == "camping"){
-            this.placing = null;
+        if(!(stage.getStageName() == "camp")){
+            this.placing = placing;
         }
-        this.placing = placing;
+
     }
 }

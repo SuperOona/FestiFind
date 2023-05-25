@@ -2,19 +2,23 @@ package festi.model;
 
 import java.util.ArrayList;
 import java.util.Objects;
-import festi.model.Location;
 
-public class Account {
+public class User {
     private String username;
     private String password;
     private String email;
     private Location location;
-    private ArrayList<Account> friends;
+    private ArrayList<User> friends;
+    private static ArrayList<String> registerdEmail = new ArrayList<>();
 
-    public Account(String username, String password, String email) {
+    public User(String username, String password, String email) {
+        if (registerdEmail.contains(email)) throw new IllegalArgumentException("Email in use");
         this.username = username;
         this.password = password;
         this.email = email;
+        this.friends = new ArrayList<User>();
+        registerdEmail.add(email);
+
     }
 
     public String getUsername() {
@@ -41,16 +45,24 @@ public class Account {
         this.location = location;
     }
 
-    public ArrayList<Account> getFriends() {
+    public ArrayList<User> getFriends() {
         return friends;
     }
 
-    public void setFriends(ArrayList<Account> friends) {
+    public void setFriends(ArrayList<User> friends) {
         this.friends = friends;
     }
-    public void addFriend(Account account){
-        if(!Objects.equals(account.email, this.email)){
-            friends.add(account);
+    public void addFriend(User user){
+        if(!Objects.equals(user.email, this.email)){
+            this.friends.add(user);
         }
+    }
+
+    public boolean isEmailRegistered(String email){
+        return registerdEmail.contains(email);
+    }
+
+    public static ArrayList<String> getRegisterdEmail() {
+        return registerdEmail;
     }
 }

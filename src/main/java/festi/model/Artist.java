@@ -4,11 +4,11 @@ import festi.model.Stage;
 
 public class Artist {
     private String name;
-    private Stage stage;
 
-    public Artist(String name, Stage stage) {
+
+    public Artist(String name) {
         this.name = name;
-        this.stage = stage;
+
     }
 
     public String getName() {
@@ -19,11 +19,5 @@ public class Artist {
         this.name = name;
     }
 
-    public Stage getStage() {
-        return stage;
-    }
 
-    public void setStage(Stage stage) {
-        this.stage = stage;
-    }
 }

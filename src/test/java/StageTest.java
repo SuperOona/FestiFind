@@ -3,6 +3,7 @@ import festi.model.Festival;
 import festi.model.Stage;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -17,21 +18,35 @@ public class StageTest {
 
     @Test
     void artistAdd(){
-        ArrayList<Date> dates = new ArrayList<>(18-01-2024);
+        ArrayList<Date> dates = new ArrayList<>();
+        Date date = new Date(2000, 01, 18);
+        dates.add(date);
+
         Festival oonaFest = new Festival("OonaFest", dates);
-        Stage main = new Stage("main", oonaFest);
-        Artist oona = new Artist("Oona Bertrums", main);
-        main.addArtist(oona);
-        assertEquals(main.getArtist(), oona);
+        Artist oona = new Artist("Oona Bertrums");
+        ArrayList<Artist> artists = new ArrayList<>();
+        artists.add(oona);
+        Stage main = new Stage("main", oonaFest, artists);
+
+
+        assertEquals(main.getArtist(), artists);
     }
 
     @Test
     void artistDoubleAdd(){
-        ArrayList<Date> dates = new ArrayList<>(18-01-2024);
+        ArrayList<Date> dates = new ArrayList<>();
+        Date date = new Date(2000, 01, 18);
+        dates.add(date);
+
         Festival oonaFest = new Festival("OonaFest", dates);
-        Stage main = new Stage("main", oonaFest);
-        Artist oona = new Artist("Oona Bertrums", main);
+        Artist oona = new Artist("Oona Bertrums");
+        ArrayList<Artist> artists = new ArrayList<>();
+        artists.add(oona);
+        Stage main = new Stage("main", oonaFest, artists);
+
         main.addArtist(oona);
-        assertEquals(main.getArtist(), oona);
+
+
+        assertEquals(main.getArtist(), artists);
     }
 }
