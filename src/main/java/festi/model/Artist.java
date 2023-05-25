@@ -1,4 +1,6 @@
-package main.java.festi.model;
+package festi.model;
+
+import festi.model.Stage;
 
 public class Artist {
     private String name;

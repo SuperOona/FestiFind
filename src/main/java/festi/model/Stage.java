@@ -1,6 +1,8 @@
-package main.java.festi.model;
+package festi.model;
 
 import java.util.UUID;
+import festi.model.Festival;
+import festi.model.Artist;
 
 public class Stage{
     private String stageId;

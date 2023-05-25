@@ -1,6 +1,9 @@
-package main.java.festi.model;
+package festi.model;
 
 import java.util.UUID;
+import festi.model.Stage;
+import festi.model.Account;
+import festi.model.Placing;
 
 public class Location {
     private String locationId;

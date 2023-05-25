@@ -1,4 +1,4 @@
-package main.java.festi.model;
+package festi.model;
 
 public enum Placing {
     FRONTLEFT,

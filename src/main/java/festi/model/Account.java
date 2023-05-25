@@ -1,7 +1,8 @@
-package main.java.festi.model;
+package festi.model;
 
 import java.util.ArrayList;
 import java.util.Objects;
+import festi.model.Location;
 
 public class Account {
     private String username;

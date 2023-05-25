@@ -1,7 +1,10 @@
-package main.java.festi.model;
+package festi.model;
 
 import java.util.ArrayList;
 import java.util.UUID;
+import festi.model.Festival;
+import festi.model.Location;
+import festi.model.Account;
 
 public class FriendGroep {
     private String friendGroupId;
