@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/LocationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/LoginReqeust.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/MySecurityContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/setUp/JerseyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/setUp/MyServletContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/FriendGroep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/FriendGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +27,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -40,26 +47,35 @@
     </option>
   </component>
   <component name="ProjectId" id="2QFsPFuHQFQyfAgdLSL1TPz3gKl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/super/IdeaProjects/FestiFind/src/main/java/authentication",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\super\IdeaProjects\FestiFind\src\main\java\authentication" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.UserTest.emailUnique">
     <configuration name="LocationTest.locationCamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FestiFind" />
@@ -132,6 +148,8 @@
       <workItem from="1684960639111" duration="1132000" />
       <workItem from="1685001326146" duration="7214000" />
       <workItem from="1685020073212" duration="8889000" />
+      <workItem from="1685619044703" duration="2516000" />
+      <workItem from="1685703322927" duration="6783000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>

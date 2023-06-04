@@ -23,11 +23,7 @@ w
 G.idea/sonarlint/issuestore/d/7/d73eb68580c43d098ebf9d5d0933bcd294cdc5c4,a\b\ab93eb7eada61bf9f233d83f29ce5c498d3047c9
 w
 G.idea/sonarlint/issuestore/2/5/254caa32711bdb3dd5513473b87bdf1ddfff626a,b\b\bb4ab2a1e64b2dd85218e0f297c393ac2cb7aa79
-=
-src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
 Å
 Q.idea/sonarlint/securityhotspotstore/2/5/254caa32711bdb3dd5513473b87bdf1ddfff626a,0\8\0820538dd619fec3d64243a798aff41674e081d2
 Å
 Q.idea/sonarlint/securityhotspotstore/e/d/edf547a8088eac3dd92e172f221d7b46ebce5ced,d\2\d26491ee98f91e78d56bc399d57b6a5c7145a10f
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

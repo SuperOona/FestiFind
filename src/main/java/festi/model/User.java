@@ -1,15 +1,31 @@
 package festi.model;
 
+import java.security.Principal;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
-public class User {
+public class User implements Principal {
     private String username;
     private String password;
     private String email;
     private Location location;
     private ArrayList<User> friends;
     private static ArrayList<String> registerdEmail = new ArrayList<>();
+    private static List<User> allUsers = new ArrayList<>();
+
+    public static boolean createUser(String username, String password, String role){
+        if (getByName(username) == null){
+            return allUsers.add(new User(username, password, role));
+        }
+        return false;
+    }
+
+    private static User getByName(String username) {
+        return allUsers.stream()
+                .filter(user -> user.username.equals(username))
+                .findFirst().orElse(null);
+    }
 
     public User(String username, String password, String email) {
         if (registerdEmail.contains(email)) throw new IllegalArgumentException("Email in use");
@@ -64,5 +80,10 @@ public class User {
 
     public static ArrayList<String> getRegisterdEmail() {
         return registerdEmail;
+    }
+
+    @Override
+    public String getName() {
+        return username;
     }
 }
