@@ -9,6 +9,7 @@ public class User implements Principal {
     private String username;
     private String password;
     private String email;
+    private String role;
     private Location location;
     private ArrayList<User> friends;
     private static ArrayList<String> registerdEmail = new ArrayList<>();
@@ -21,7 +22,7 @@ public class User implements Principal {
         return false;
     }
 
-    private static User getByName(String username) {
+    public static User getByName(String username) {
         return allUsers.stream()
                 .filter(user -> user.username.equals(username))
                 .findFirst().orElse(null);
@@ -36,6 +37,13 @@ public class User implements Principal {
         registerdEmail.add(email);
 
     }
+
+    public static String validateLogin(String email, String password) {
+        User user = getByName(email);
+        if (user != null && user.password.equals(password)) return user.role;
+        return null;
+    }
+
 
     public String getUsername() {
         return username;
@@ -85,5 +93,9 @@ public class User implements Principal {
     @Override
     public String getName() {
         return username;
+    }
+
+    public String getRole() {
+        return role;
     }
 }

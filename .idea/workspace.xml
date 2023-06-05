@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/LoginReqeust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/MySecurityContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/setUp/JerseyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/setUp/MyServletContextListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/authentication/MySecurityContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/MySecurityContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/setUp/JerseyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/JerseyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/setUp/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +68,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\super\IdeaProjects\FestiFind\src\main\java\authentication" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="festi.authentication" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.UserTest.emailUnique">
@@ -149,7 +146,7 @@
       <workItem from="1685001326146" duration="7214000" />
       <workItem from="1685020073212" duration="8889000" />
       <workItem from="1685619044703" duration="2516000" />
-      <workItem from="1685703322927" duration="6783000" />
+      <workItem from="1685703322927" duration="7541000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>
@@ -172,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685006471773</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementing aunthentication">
+      <created>1685910943633</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685910943633</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +186,7 @@
     <MESSAGE value="Project structure" />
     <MESSAGE value="Project structure fix" />
     <MESSAGE value="Stage test not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stage test not working" />
+    <MESSAGE value="Implementing aunthentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing aunthentication" />
   </component>
 </project>

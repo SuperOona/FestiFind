@@ -1,4 +1,4 @@
-package setUp;
+package festi.setUp;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
