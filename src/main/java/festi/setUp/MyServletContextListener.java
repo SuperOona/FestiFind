@@ -1,6 +1,5 @@
 package festi.setUp;
 
-import festi.model.User;
 import festi.persistence.PersistenceManager;
 
 import javax.servlet.ServletContextEvent;
@@ -9,7 +8,7 @@ import javax.servlet.annotation.WebListener;
 import java.io.IOException;
 
 import static festi.model.User.createAdmin;
-import static festi.model.User.getallUsers;
+import static festi.model.User.createUser;
 
 @WebListener
 public class MyServletContextListener implements ServletContextListener {
@@ -17,7 +16,8 @@ public class MyServletContextListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent event){
         try {
             PersistenceManager.loadUsersFromFile();
-            createAdmin("admin","adminGod","admin@festifind.nl");
+            /*createAdmin("admin","adminGod","admin@festifind.nl");
+            createUser("SuperOona", "oona", "o@hot.com");*/
 
 
         }catch (Exception e){

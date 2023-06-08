@@ -10,11 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/festi/persistence/PersistenceManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/persistence/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/persistence/PersistenceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/festi/persistence/PersistenceManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/festi/persistence/PersistenceManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,7 @@
       <recent name="festi.authentication" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PersistenceManagerTest.loadUsersFromFile">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.73">
     <configuration name="LocationTest.locationCamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FestiFind" />
       <option name="PACKAGE_NAME" value="" />
@@ -279,7 +281,7 @@
       <workItem from="1686038665993" duration="13117000" />
       <workItem from="1686163659250" duration="18477000" />
       <workItem from="1686231720764" duration="1303000" />
-      <workItem from="1686250206108" duration="709000" />
+      <workItem from="1686250206108" duration="5609000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>
@@ -330,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686227807610</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="PersistenceManagerTest for user">
+      <created>1686252454150</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686252454150</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +353,7 @@
     <MESSAGE value="Aunthentication back-end fixes" />
     <MESSAGE value="Aunthentication front-end fixes" />
     <MESSAGE value="Aunthentication works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aunthentication works" />
+    <MESSAGE value="PersistenceManagerTest for user" />
+    <option name="LAST_COMMIT_MESSAGE" value="PersistenceManagerTest for user" />
   </component>
 </project>

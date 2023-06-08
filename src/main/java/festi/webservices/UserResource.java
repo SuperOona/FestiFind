@@ -14,6 +14,6 @@ public class UserResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response giveUser(){
-        return Response.ok(User.getallUsers()).build();
+        return Response.ok(User.getAllUsers()).build();
     }
 }

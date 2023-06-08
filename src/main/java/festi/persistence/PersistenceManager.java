@@ -2,22 +2,29 @@ package festi.persistence;
 
 import festi.model.User;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PersistenceManager {
     private static Path userStorage = Path.of("/home/users.obj");
     public static void loadUsersFromFile() throws ClassNotFoundException{
+        List<User> loaded = new ArrayList<>();
         try {
             ObjectInputStream inputStream =  new ObjectInputStream(Files.newInputStream(userStorage));
-            List<User> loaded = (List<User>) inputStream.readObject();
+
+            while (true){
+                User user = (User) inputStream.readObject();
+                loaded.add(user);
+            }
+
+        }catch (IOException e) {
             User.setAllUsers(loaded);
-        }catch (IOException ie){
-            System.out.println("pop"+ie);
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }
 
@@ -26,8 +33,18 @@ public class PersistenceManager {
         if (!Files.exists(homeDire)){
             Files.createDirectory(homeDire);
         }
-        List<User> toSave = User.getallUsers();
-        ObjectOutputStream outputStream = new ObjectOutputStream(Files.newOutputStream(userStorage));
-        outputStream.writeObject(toSave);
+        List<User> toSave = User.getAllUsers();
+        toSave.forEach(user -> {
+            try {
+                OutputStream output = Files.newOutputStream(userStorage);
+                ObjectOutputStream outputStream = new ObjectOutputStream(output);
+                outputStream.writeObject(user);
+            }catch (IOException oei){
+                System.out.println(oei);
+            }
+
+        });
+
+
     }
 }

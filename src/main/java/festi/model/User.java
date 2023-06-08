@@ -2,12 +2,13 @@ package festi.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import java.io.Serializable;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class User implements Principal {
+public class User implements Principal, Serializable {
     private String username;
     private String password;
     private String email;
@@ -55,7 +56,7 @@ public class User implements Principal {
         return null;
     }
 
-    public static List<User> getallUsers() {
+    public static List<User> getAllUsers() {
         return allUsers;
     }
 
