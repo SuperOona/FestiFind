@@ -1,5 +1,7 @@
 package festi.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
@@ -61,7 +63,7 @@ public class User implements Principal {
         allUsers = allUsers;
     }
 
-
+@JsonIgnore
     public String getUsername() {
         return username;
     }

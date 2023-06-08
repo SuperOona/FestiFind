@@ -10,23 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/persistence/PersistenceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/UserResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminDashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/variables.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/setUp/JerseyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/JerseyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +261,7 @@
       <workItem from="1685619044703" duration="2516000" />
       <workItem from="1685703322927" duration="11442000" />
       <workItem from="1686038665993" duration="13117000" />
-      <workItem from="1686163659250" duration="17651000" />
+      <workItem from="1686163659250" duration="18367000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>
@@ -311,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685958464835</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Aunthentication front-end fixes">
+      <created>1686227021297</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686227021297</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +317,7 @@
     <MESSAGE value="Stage test not working" />
     <MESSAGE value="Implementing aunthentication" />
     <MESSAGE value="Aunthentication back-end fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aunthentication back-end fixes" />
+    <MESSAGE value="Aunthentication front-end fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aunthentication front-end fixes" />
   </component>
 </project>

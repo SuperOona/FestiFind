@@ -5,7 +5,7 @@ function login(){
     const option = {
         method: 'POST',
         headers:{'Content-Type': 'application/json'},
-        body: jsonBody
+        body: JSON.stringify(jsonBody)
     }
     console.log(jsonBody)
     fetch("/restservices/authentication", option)
