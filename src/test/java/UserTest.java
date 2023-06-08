@@ -45,8 +45,5 @@ public class UserTest {
 
 
         assertEquals(User.getRegisterdEmail(), users);
-
-
-
     }
 }

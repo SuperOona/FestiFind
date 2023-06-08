@@ -10,10 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/festi/persistence/PersistenceManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,7 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -65,6 +67,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/super/IdeaProjects/FestiFind/src/main/java/authentication",
     "list.type.of.created.stylesheet": "CSS",
@@ -86,11 +90,17 @@
       <recent name="C:\Users\super\IdeaProjects\FestiFind\src\main\webapp\javaScript" />
       <recent name="C:\Users\super\IdeaProjects\FestiFind\src\main\webapp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="festi.persistence" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="festi.authentication" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.73">
+  <component name="RunManager" selected="JUnit.PersistenceManagerTest.loadUsersFromFile">
     <configuration name="LocationTest.locationCamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FestiFind" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,11 +111,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StageTest.artistAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersistenceManagerTest.loadUsersFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FestiFind" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StageTest" />
-      <option name="METHOD_NAME" value="artistAdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="festi.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="festi.persistence" />
+      <option name="MAIN_CLASS_NAME" value="festi.persistence.PersistenceManagerTest" />
+      <option name="METHOD_NAME" value="loadUsersFromFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,8 +246,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.PersistenceManagerTest.loadUsersFromFile" />
       <item itemvalue="JUnit.LocationTest.locationCamp" />
-      <item itemvalue="JUnit.StageTest.artistAdd" />
       <item itemvalue="JUnit.StageTest.artistDoubleAdd" />
       <item itemvalue="JUnit.UserTest.cantBeMyOwnFriend" />
       <item itemvalue="JUnit.UserTest.emailUnique" />
@@ -239,11 +255,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersistenceManagerTest.loadUsersFromFile" />
         <item itemvalue="JUnit.UserTest.emailUnique" />
         <item itemvalue="JUnit.UserTest.cantBeMyOwnFriend" />
         <item itemvalue="JUnit.LocationTest.locationCamp" />
         <item itemvalue="JUnit.StageTest.artistDoubleAdd" />
-        <item itemvalue="JUnit.StageTest.artistAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +277,9 @@
       <workItem from="1685619044703" duration="2516000" />
       <workItem from="1685703322927" duration="11442000" />
       <workItem from="1686038665993" duration="13117000" />
-      <workItem from="1686163659250" duration="18367000" />
+      <workItem from="1686163659250" duration="18477000" />
+      <workItem from="1686231720764" duration="1303000" />
+      <workItem from="1686250206108" duration="709000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>
@@ -305,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686227021297</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Aunthentication works">
+      <created>1686227807610</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686227807610</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +343,7 @@
     <MESSAGE value="Implementing aunthentication" />
     <MESSAGE value="Aunthentication back-end fixes" />
     <MESSAGE value="Aunthentication front-end fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aunthentication front-end fixes" />
+    <MESSAGE value="Aunthentication works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aunthentication works" />
   </component>
 </project>
