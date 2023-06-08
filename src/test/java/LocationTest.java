@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.Date;
 
+import static festi.model.User.createUser;
+import static festi.model.User.getByEmail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LocationTest {
@@ -19,7 +21,8 @@ public class LocationTest {
 
         Festival oonaFest = new Festival("oonaFest", dates);
         Stage camp = new Stage("camp", oonaFest, artists);
-        User user = new User("superOona", "OonaIsCool2", "o@hot.com");
+        createUser("superOona", "OonaIsCool2", "o@hot.com");
+        User user = getByEmail("o@hot.com");
         Location location = new Location(camp, user);
         location.setPlacing(Placing.CENTERN);
 

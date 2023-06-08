@@ -5,10 +5,10 @@ import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 
 import javax.ws.rs.ApplicationPath;
 
-@ApplicationPath("restserices")
+@ApplicationPath("/restservices")
 public class JerseyConfig extends ResourceConfig {
     public JerseyConfig() {
-        packages("festi.webservices", "festi/authentication");
+        packages("festi.webservices", "festi.authentication");
         register(RolesAllowedDynamicFeature.class);
     }
 }

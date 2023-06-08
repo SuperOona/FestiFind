@@ -27,3 +27,11 @@ G.idea/sonarlint/issuestore/2/5/254caa32711bdb3dd5513473b87bdf1ddfff626a,b\b\bb
 Q.idea/sonarlint/securityhotspotstore/2/5/254caa32711bdb3dd5513473b87bdf1ddfff626a,0\8\0820538dd619fec3d64243a798aff41674e081d2
 Å
 Q.idea/sonarlint/securityhotspotstore/e/d/edf547a8088eac3dd92e172f221d7b46ebce5ced,d\2\d26491ee98f91e78d56bc399d57b6a5c7145a10f
+W
+'src/main/java/festi/model/Festival.java,5\4\54128eedd8eb34f001be7daea4c65d8b64eaf95e
+W
+'src/main/java/festi/model/Location.java,4\8\484869ebed7bc30c0f556d6873305c82f9b6e5d9
+i
+9src/main/java/festi/authentication/MySecurityContext.java,f\b\fb747100586c693058830ebcbabc9905c84ffec6
+L
+src/test/java/StageTest.java,f\f\ffe0084a6e53ddf8b6a943455582e0256454d7d2

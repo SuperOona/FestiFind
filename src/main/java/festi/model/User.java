@@ -15,33 +15,50 @@ public class User implements Principal {
     private static ArrayList<String> registerdEmail = new ArrayList<>();
     private static List<User> allUsers = new ArrayList<>();
 
-    public static boolean createUser(String username, String password, String role){
-        if (getByName(username) == null){
-            return allUsers.add(new User(username, password, role));
+    public static boolean createUser(String username, String password, String email){
+        if (getByEmail(email) == null){
+            return allUsers.add(new User(username, password, email, "user"));
         }
         return false;
     }
 
-    public static User getByName(String username) {
+    public static boolean createAdmin(String username, String password, String email){
+        if (getByEmail(email) == null){
+            return allUsers.add(new User(username, password, email, "admin"));
+        }
+        return false;
+    }
+
+    public static User getByEmail(String email) {
         return allUsers.stream()
-                .filter(user -> user.username.equals(username))
+                .filter(user -> user.email.equals(email))
                 .findFirst().orElse(null);
     }
 
-    public User(String username, String password, String email) {
+    private User(String username, String password, String email, String role) {
         if (registerdEmail.contains(email)) throw new IllegalArgumentException("Email in use");
         this.username = username;
         this.password = password;
         this.email = email;
+        this.role = role;
+
         this.friends = new ArrayList<User>();
         registerdEmail.add(email);
 
     }
 
     public static String validateLogin(String email, String password) {
-        User user = getByName(email);
+        User user = getByEmail(email);
         if (user != null && user.password.equals(password)) return user.role;
         return null;
+    }
+
+    public static List<User> getallUsers() {
+        return allUsers;
+    }
+
+    public static void setAllUsers(List<User> allUsers) {
+        allUsers = allUsers;
     }
 
 

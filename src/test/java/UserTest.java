@@ -3,14 +3,18 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
+import static festi.model.User.createUser;
+import static festi.model.User.getByEmail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class UserTest {
     @Test
     void cantBeMyOwnFriend(){
-        User oona = new User("SuperOona", "oona", "o@hot.com");
-        User daphne = new User("dahpeWest", "daphne", "d@hot.com");
+        createUser("SuperOona", "oona", "o@hot.com");
+        createUser("dahpeWest", "daphne", "d@hot.com");
+        User oona = getByEmail("o@hot.com");
+        User daphne = getByEmail("d@hot.com");
         ArrayList<User> expected = new ArrayList<>();
         expected.add(daphne);
 
@@ -23,10 +27,13 @@ public class UserTest {
 
     @Test
     void emailUnique(){
-        User oona = new User("SuperOona", "oona", "o@hot.com");
-        User daphne = new User("dahpeWest", "daphne", "l@hot.com");
+        createUser("SuperOona", "oona", "o@hot.com");
+        createUser("dahpeWest", "daphne", "d@hot.com");
+        User oona = getByEmail("o@hot.com");
+        User daphne = getByEmail("d@hot.com");
         try {
-            User leo = new User("leojenns", "leo", "l@hot.com");
+            createUser("leojenns", "leo", "l@hot.com");
+            User leo = getByEmail("l@hot.com");
         }catch (IllegalArgumentException e){
             System.out.println(e);
         }

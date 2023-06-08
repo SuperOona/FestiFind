@@ -17,7 +17,7 @@ import java.security.Key;
 import java.util.AbstractMap;
 import java.util.Calendar;
 
-@Path("authentication")
+@Path("/authentication")
 public class AuthenticationResource {
     public static final Key key = MacProvider.generateKey();
 
@@ -26,6 +26,7 @@ public class AuthenticationResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response authenticateUser(LoginReqeust logonReqeust){
         try {
+            System.out.println(User.getallUsers());
             String role = User.validateLogin(logonReqeust.email, logonReqeust.password);
             if (role == null) throw new IllegalArgumentException("no user");
 

@@ -34,7 +34,7 @@ public class AuthenticationFilter implements ContainerRequestFilter {
                 Claims claims = parser.parseClaimsJws(token).getBody();
 
                 String user = claims.getSubject();
-                msc = new MySecurityContext(User.getByName(user), scheme);
+                msc = new MySecurityContext(User.getByEmail(user), scheme);
 
             } catch (JwtException | IllegalArgumentException e) {
                 System.out.println("Invalid JWT, processing as guest!");
