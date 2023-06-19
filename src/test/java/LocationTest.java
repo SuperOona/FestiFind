@@ -4,13 +4,13 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.Date;
 
-import static festi.model.User.createUser;
-import static festi.model.User.getByEmail;
+import static festi.model.User.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LocationTest {
     @Test
     void locationCamp(){
+
         ArrayList<Date> dates = new ArrayList<>();
         Date date = new Date(2000, 01, 18);
         dates.add(date);

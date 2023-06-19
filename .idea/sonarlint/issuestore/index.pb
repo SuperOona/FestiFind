@@ -33,10 +33,6 @@ W
 'src/main/java/festi/model/Location.java,4\8\484869ebed7bc30c0f556d6873305c82f9b6e5d9
 i
 9src/main/java/festi/authentication/MySecurityContext.java,f\b\fb747100586c693058830ebcbabc9905c84ffec6
-L
-src/test/java/StageTest.java,f\f\ffe0084a6e53ddf8b6a943455582e0256454d7d2
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 d
 4src/main/java/festi/authentication/LoginReqeust.java,2\d\2d59db1985238ae7d450dcee5a08a6c266f31a70
 l
@@ -47,5 +43,7 @@ S
 #src/main/webapp/style/variables.css,b\5\b5a1da9f24add76588a9228f98a9463f2ccf4fa1
 S
 #src/main/webapp/adminDashboard.html,2\6\26a0364c5ec3c58782c3e9ef59de9038c2101667
-O
-src/test/java/LocationTest.java,4\3\43950e6dfebf02f1a9a6d679a43d40fdb307f5a3
+[
++src/main/java/festi/setUp/JerseyConfig.java,7\3\73ceee26fc1b3aa515b505d35101c97139a43ec7
+L
+src/test/java/StageTest.java,f\f\ffe0084a6e53ddf8b6a943455582e0256454d7d2

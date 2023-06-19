@@ -25,6 +25,15 @@ public class User implements Principal, Serializable {
         return false;
     }
 
+    public static User createUser2(String username, String password, String email){
+        User u = new User(username, password, email, "user");
+        if (getByEmail(email) == null){
+            allUsers.add(u);
+            return u;
+        }
+        throw new RuntimeException("Emailadres bestaat al");
+    }
+
     public static boolean createAdmin(String username, String password, String email){
         if (getByEmail(email) == null){
             return allUsers.add(new User(username, password, email, "admin"));
@@ -60,11 +69,16 @@ public class User implements Principal, Serializable {
         return allUsers;
     }
 
-    public static void setAllUsers(List<User> allUsers) {
-        allUsers = allUsers;
+    public static void setAllUsers(List<User> newUsers) {
+        allUsers = newUsers;
     }
 
-@JsonIgnore
+    public static void clearUsers() {
+        allUsers = new ArrayList<>();
+        registerdEmail = new ArrayList<>();
+    }
+
+    @JsonIgnore
     public String getUsername() {
         return username;
     }
@@ -73,8 +87,12 @@ public class User implements Principal, Serializable {
         this.username = username;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public boolean updatePassword(String newPassword){
+        if (password == newPassword){
+            this.password = newPassword;
+            return true;
+        }
+        return false;
     }
 
     public String getEmail() {

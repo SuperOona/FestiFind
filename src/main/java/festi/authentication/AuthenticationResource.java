@@ -1,6 +1,7 @@
 package festi.authentication;
 
 import festi.model.User;
+import festi.request.LoginReqeust;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

@@ -1,4 +1,4 @@
-package festi.authentication;
+package festi.request;
 
 public class LoginReqeust {
     public String email;
