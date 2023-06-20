@@ -88,7 +88,9 @@ public class User implements Principal, Serializable {
     }
 
     public boolean updatePassword(String newPassword){
-        if (password == newPassword){
+        System.out.println("old: "+ password);
+        System.out.println("new: "+ newPassword);
+        if (!password.equals(newPassword)){
             this.password = newPassword;
             return true;
         }

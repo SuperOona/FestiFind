@@ -1,6 +1,7 @@
 package festi.webservices;
 
 import festi.model.User;
+import festi.request.ForgotRequest;
 import festi.request.UserRequest;
 
 import javax.ws.rs.*;
@@ -31,13 +32,16 @@ public class UserResource {
     @Path("/forgot")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response forgotPassword(UserRequest request){
+    public Response forgotPassword(ForgotRequest request){
         User replace = User.getByEmail(request.email);
-
-        if (!replace.updatePassword(request.password)){
-            return Response.status(Response.Status.EXPECTATION_FAILED).entity("Password couldn't be change, check email").build();
+        if (replace != null){
+            if (!replace.updatePassword(request.newPassword)){
+                return Response.status(Response.Status.EXPECTATION_FAILED).entity("Password couldn't be change, password can't be old password").build();
+            }
+            return Response.ok().build();
         }
-        return Response.ok().build();
+        return Response.status(Response.Status.EXPECTATION_FAILED).entity("Password couldn't be change, check email").build();
+
     }
 
 

@@ -10,23 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/request/UserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/createuser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/createUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/festi/request/ForgotRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/forgot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/forgot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/authentication/LoginReqeust.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/request/LoginReqeust.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/persistence/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/persistence/PersistenceManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/UserResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/festi/persistence/PersistenceManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/festi/persistence/PersistenceManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +30,9 @@
       <list>
         <option value="CSS File" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,7 +81,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -303,7 +295,9 @@
       <workItem from="1686302551483" duration="5280000" />
       <workItem from="1686315293205" duration="2465000" />
       <workItem from="1686594710500" duration="28000" />
-      <workItem from="1686899813539" duration="22815000" />
+      <workItem from="1686899813539" duration="25140000" />
+      <workItem from="1687194478429" duration="1789000" />
+      <workItem from="1687196306711" duration="4342000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>
@@ -368,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686257946413</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="CreateUser made">
+      <created>1687185135675</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687185135675</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +385,7 @@
     <MESSAGE value="Aunthentication works" />
     <MESSAGE value="PersistenceManagerTest for user" />
     <MESSAGE value="PersistenceManager laad niet de users" />
-    <option name="LAST_COMMIT_MESSAGE" value="PersistenceManager laad niet de users" />
+    <MESSAGE value="CreateUser made" />
+    <option name="LAST_COMMIT_MESSAGE" value="CreateUser made" />
   </component>
 </project>
