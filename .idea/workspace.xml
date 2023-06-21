@@ -10,24 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/festi/webservices/dashboardResourceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/festi/request/LocationRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Festival.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Festival.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/request/LoginReqeust.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/request/LoginReqeust.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminDashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/festi/model/StageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/festi/model/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LocationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/festi/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/festi/model/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/festi/webservices/dashboardResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/festi/model/LocationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +34,8 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -311,6 +305,7 @@
       <workItem from="1686899813539" duration="25140000" />
       <workItem from="1687194478429" duration="1789000" />
       <workItem from="1687196306711" duration="13971000" />
+      <workItem from="1687331415776" duration="9412000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>
@@ -389,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687250906144</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Forgot made">
+      <option name="closed" value="true" />
+      <created>1687331742804</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687331742804</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,6 +410,7 @@
     <MESSAGE value="PersistenceManager laad niet de users" />
     <MESSAGE value="CreateUser made" />
     <MESSAGE value="Forgot made, back-end works. front-end doesnt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forgot made, back-end works. front-end doesnt" />
+    <MESSAGE value="Forgot made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forgot made" />
   </component>
 </project>

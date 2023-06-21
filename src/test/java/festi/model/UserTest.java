@@ -18,7 +18,6 @@ public class UserTest {
 
     @Test
     void cantBeMyOwnFriend(){
-
         System.out.println(getAllUsers());
         System.out.println(createUser("SuperOona", "oona", "o@hot.com"));
         createUser("dahpeWest", "daphne", "d@hot.com");
@@ -67,4 +66,6 @@ public class UserTest {
         assertEquals(1, User.getAllUsers().size());
 
     }
+
+
 }

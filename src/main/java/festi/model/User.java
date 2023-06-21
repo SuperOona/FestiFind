@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import java.security.Principal;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -138,4 +139,6 @@ public class User implements Principal, Serializable {
     public String getRole() {
         return role;
     }
+
+
 }

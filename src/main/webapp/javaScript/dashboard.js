@@ -6,11 +6,14 @@ function loadList(){
         }
     }
     fetch("restservices/dashboard", option)
-        .then(response =>{
-
-            return response.json()
-        }).then(myJson => {
-
+        .then(response => response.json())
+        .then(myJson => {
+            const listHtml = document.querySelector("#list");
+/*
+            myJson.
+*/
+    }).catch(error => {
+        console.log(error)
     })
 }
 document.addEventListener("load", loadList)

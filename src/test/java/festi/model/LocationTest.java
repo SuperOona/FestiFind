@@ -1,24 +1,38 @@
-package festi.webservices;
+package festi.model;
 
 import festi.authentication.AuthenticationResource;
 import festi.model.*;
-import festi.request.LoginReqeust;
-import org.junit.jupiter.api.BeforeEach;
+import festi.webservices.DashboardResource;
 import org.junit.jupiter.api.Test;
 
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.SecurityContext;
 import java.util.ArrayList;
 import java.util.Date;
 
 import static festi.model.User.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class dashboardResourceTest {
+public class LocationTest {
+    @Test
+    void locationCamp(){
 
-    @BeforeEach
-    void clear(){
-        User.clearUsers();
+        ArrayList<Date> dates = new ArrayList<>();
+        Date date = new Date(2000, 01, 18);
+        dates.add(date);
+
+        Artist oona = new Artist("Oona Bertrums");
+        ArrayList<Artist> artists = new ArrayList<>();
+        artists.add(oona);
+
+        Festival oonaFest = new Festival("oonaFest", dates);
+        Stage camp = new Stage("camp", oonaFest, artists);
+        createUser("superOona", "OonaIsCool2", "o@hot.com");
+        User user = getByEmail("o@hot.com");
+        Location location = new Location(camp);
+        location.setPlacing(Placing.CENTERN);
+
+        assertEquals(location.getPlacing(), null);
     }
+
     @Test
     void getLocations(){
         //make users
@@ -46,5 +60,4 @@ class dashboardResourceTest {
         String token = auth.createToken(daphne.getEmail(), daphne.getRole());
 
     }
-
 }
