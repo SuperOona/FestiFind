@@ -16,7 +16,7 @@ public class MyServletContextListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent event){
         try {
             PersistenceManager.loadUsersFromFile();
-
+            createAdmin("admin","adminGod","admin@festifind.nl");
         }catch (Exception e){
             System.out.println(e);
         }

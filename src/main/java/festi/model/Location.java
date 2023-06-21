@@ -8,10 +8,9 @@ public class Location {
     private User user;
     private Placing placing;
 
-    public Location(Stage stage, User user) {
+    public Location(Stage stage) {
         this.locationId = UUID.randomUUID().toString();
         this.stage = stage;
-        this.user = user;
     }
 
     public String getLocationId() {

@@ -17,7 +17,7 @@ function login(){
         })
         .then(myJson => {
             window.sessionStorage.setItem("myJWT", myJson.JWT);
-            window.location.href = "/adminDashboard.html"
+            window.location.href = "/dashboard.html"
         })
         .catch(error => console.log(error));
 }

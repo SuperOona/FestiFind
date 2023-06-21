@@ -27,39 +27,31 @@ G.idea/sonarlint/issuestore/2/5/254caa32711bdb3dd5513473b87bdf1ddfff626a,b\b\bb
 Q.idea/sonarlint/securityhotspotstore/2/5/254caa32711bdb3dd5513473b87bdf1ddfff626a,0\8\0820538dd619fec3d64243a798aff41674e081d2
 Å
 Q.idea/sonarlint/securityhotspotstore/e/d/edf547a8088eac3dd92e172f221d7b46ebce5ced,d\2\d26491ee98f91e78d56bc399d57b6a5c7145a10f
-W
-'src/main/java/festi/model/Festival.java,5\4\54128eedd8eb34f001be7daea4c65d8b64eaf95e
-W
-'src/main/java/festi/model/Location.java,4\8\484869ebed7bc30c0f556d6873305c82f9b6e5d9
 i
 9src/main/java/festi/authentication/MySecurityContext.java,f\b\fb747100586c693058830ebcbabc9905c84ffec6
 S
 #src/main/webapp/style/variables.css,b\5\b5a1da9f24add76588a9228f98a9463f2ccf4fa1
-O
-src/main/webapp/style/index.css,c\3\c3698019c1a7f0d41dcea7568260835f66d8e2e9
-S
-#src/main/webapp/adminDashboard.html,2\6\26a0364c5ec3c58782c3e9ef59de9038c2101667
 l
 <src/main/java/festi/authentication/AuthenticationFilter.java,e\7\e7016d9fcb0285599003a652b2c60c0fb8445b91
-[
-+src/main/java/festi/setUp/JerseyConfig.java,7\3\73ceee26fc1b3aa515b505d35101c97139a43ec7
-L
-src/test/java/StageTest.java,f\f\ffe0084a6e53ddf8b6a943455582e0256454d7d2
 U
 %src/main/java/festi/model/Artist.java,3\7\37c9b467dc6786989500f763702a6149468fb16f
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 k
 ;src/test/java/festi/persistence/PersistenceManagerTest.java,f\c\fcca4ae2e2ab710aad0e0830c04c3a03adad8f92
-K
-src/test/java/UserTest.java,d\a\da17b786f51da7245c1b8003270a586b3dfe3906
-n
->src/main/java/festi/authentication/AuthenticationResource.java,f\5\f59d1e42f7288513c77552fb5a4d772258c22ee3
 O
-src/test/java/LocationTest.java,4\3\43950e6dfebf02f1a9a6d679a43d40fdb307f5a3
+src/main/webapp/createuser.html,a\4\a43f6e8de44a57f17f4b01653d207793819c01ab
+\
+,src/main/java/festi/request/UserRequest.java,2\e\2ef1d05faf22c98d18776ec913c90d1314c46310
+X
+(src/main/webapp/javaScript/createUser.js,3\d\3dd5cdb9b498f96bc7d419405d82d1bbd13fa473
+^
+.src/main/java/festi/request/ForgotRequest.java,8\c\8c66feedb8b3fd6cca66ccebbb5920b836324f97
+K
+src/main/webapp/forgot.html,4\a\4ae0fb9c879f1a4ed1efb45a46154bdd2c390b8c
+O
+src/main/webapp/style/index.css,c\3\c3698019c1a7f0d41dcea7568260835f66d8e2e9
 g
 7src/main/java/festi/persistence/PersistenceManager.java,6\7\678a9a275ff66db30e9bc5340d4728a72770825a
-g
-7src/main/java/festi/setUp/MyServletContextListener.java,8\b\8be42c48b0f21d5c3f431eb99a10cbcbe478ea3d
-]
--src/main/java/festi/request/LoginReqeust.java,3\f\3ff0fb0df90495b4f21d19ed24387ec74be1ce4d
+[
++src/main/java/festi/setUp/JerseyConfig.java,7\3\73ceee26fc1b3aa515b505d35101c97139a43ec7

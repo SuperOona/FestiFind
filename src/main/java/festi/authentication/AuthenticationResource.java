@@ -38,7 +38,7 @@ public class AuthenticationResource {
         }
     }
 
-    private String createToken(String username, String role) throws JwtException{
+    public String createToken(String username, String role) throws JwtException{
         Calendar expiration = Calendar.getInstance();
         expiration.add(Calendar.MINUTE, 30);
 

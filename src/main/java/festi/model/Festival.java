@@ -12,12 +12,17 @@ public class Festival {
     private ArrayList<Date> date;
     private ArrayList<Stage> stages;
 
+    private static ArrayList<Festival> allFestivals;
+
     public Festival(String name, ArrayList<Date> date) {
         this.festId = UUID.randomUUID().toString();
         this.name = name;
         this.date = date;
     }
 
+    /*public static boolean createFestival(String name, ArrayList<Date>){
+
+    }*/
     public String getFestId() {
         return festId;
     }

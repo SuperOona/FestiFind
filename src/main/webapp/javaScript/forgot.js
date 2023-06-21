@@ -2,7 +2,7 @@ function forgot(){
     let form = document.querySelector('#forgotform');
     let data = {
         email: form.email.value,
-        password: form.password.value,
+        newPassword: form.password.value,
     }
     const option = {
         method: 'POST',

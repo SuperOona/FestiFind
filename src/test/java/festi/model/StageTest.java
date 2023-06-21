@@ -1,3 +1,5 @@
+package festi.model;
+
 import festi.model.Artist;
 import festi.model.Festival;
 import festi.model.Stage;

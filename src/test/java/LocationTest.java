@@ -23,7 +23,7 @@ public class LocationTest {
         Stage camp = new Stage("camp", oonaFest, artists);
         createUser("superOona", "OonaIsCool2", "o@hot.com");
         User user = getByEmail("o@hot.com");
-        Location location = new Location(camp, user);
+        Location location = new Location(camp);
         location.setPlacing(Placing.CENTERN);
 
         assertEquals(location.getPlacing(), null);
