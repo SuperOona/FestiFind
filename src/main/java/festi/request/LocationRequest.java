@@ -6,7 +6,6 @@ import festi.model.User;
 public class LocationRequest {
     public String stage;
     public Placing placing;
-
     public User account;
 
 }

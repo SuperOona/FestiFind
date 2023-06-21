@@ -1,6 +1,7 @@
 package festi.webservices;
 
 import festi.model.Location;
+import festi.model.Stage;
 import festi.model.User;
 import festi.request.LocationRequest;
 
@@ -32,11 +33,12 @@ public class DashboardResource {
                     Location location = friend.getLocation();
                     LocationRequest lR = new LocationRequest();
                     lR.placing = location.getPlacing();
-                    lR.stage = String.valueOf(location.getStage());
-                    lR.account = location.getAccount();
+                    Stage stage = location.getStage();
+                    lR.stage = stage.getStageName();
+                    lR.account = User.getByEmail(friend.getUsername());
                     locations.add(lR);
                 }
-                if (locations.isEmpty()){
+                if (locations.contains(null)){
                     return Response.status(404).entity("No locations found").build();
                 }
                 return Response.ok(locations).build();

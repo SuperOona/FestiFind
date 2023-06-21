@@ -1,10 +1,6 @@
 package festi.setUp;
 
-import festi.model.Festival;
-import festi.model.Stage;
-import festi.model.User;
-import festi.model.Artist;
-import festi.model.Location;
+import festi.model.*;
 
 import festi.persistence.PersistenceManager;
 
@@ -38,6 +34,9 @@ public class MyServletContextListener implements ServletContextListener {
         Stage stage = new Stage("test", festival,artists);
         //set location
         Location location = new Location(stage);
+        location.setPlacing(Placing.CENTERN);
+        location.setAccount(oona);
+        location.setAccount(daphne);
         oona.setLocation(location);
         daphne.setLocation(location);
     }
