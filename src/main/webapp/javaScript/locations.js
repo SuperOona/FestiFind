@@ -5,21 +5,26 @@ function loadLocations(){
             'Authorization': 'Bearer ' + window.sessionStorage.getItem("myJWT")
         }
     }
-    fetch("restservices/dashboard/locations", option)
+    const urlP = new URLSearchParams(window.location.search);
+    const id = urlP.get('groupID')
+    fetch(`restservices/dashboard/locations/${id}`, option)
         .then(response => response.json())
         .then(myJson => {
             const listHtml = document.querySelector("#list");
             myJson.forEach(location => {
-                console.log(location)
-                const userP = document.querySelector("#user");
+                const container = document.createElement('div');
+
+                const userP = document.createElement("p");
                 userP.textContent = location.account;
-                listHtml.appendChild(userP);
-                const stageP = document.querySelector("#stage");
+                container.appendChild(userP);
+                const stageP = document.createElement("p");
                 stageP.textContent = location.stage;
-                listHtml.appendChild(stageP);
-                const placingP = document.querySelector("#placing");
+                container.appendChild(stageP);
+                const placingP = document.createElement("p");
                 placingP.textContent = location.placing;
-                listHtml.appendChild(placingP);
+                container.appendChild(placingP);
+
+                listHtml.appendChild(container);
 
 
             })

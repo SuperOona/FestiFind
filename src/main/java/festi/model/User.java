@@ -144,4 +144,13 @@ public class User implements Principal, Serializable {
     public void addGroup(FriendGroup newFriendGroup) {
         groups.add(newFriendGroup);
     }
+
+    public FriendGroup getGroupById(String id){
+        for (FriendGroup group : groups){
+            if (group.getFriendGroupId().equals(id)){
+                return group;
+            }
+        }
+        return null;
+    }
 }

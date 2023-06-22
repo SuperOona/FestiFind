@@ -9,20 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="Dash en location sperated">
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/request/GroupReqeust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/locations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/FriendGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/FriendGroup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/persistence/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/persistence/PersistenceManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/locations.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/locations.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +304,7 @@
       <workItem from="1687194478429" duration="1789000" />
       <workItem from="1687196306711" duration="13971000" />
       <workItem from="1687331415776" duration="19247000" />
-      <workItem from="1687419522308" duration="14654000" />
+      <workItem from="1687419522308" duration="17165000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>
@@ -422,7 +415,23 @@
       <option name="project" value="LOCAL" />
       <updated>1687443677502</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="dash done">
+      <option name="closed" value="true" />
+      <created>1687459655341</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687459655341</updated>
+    </task>
+    <task id="LOCAL-00017" summary="dashlink fixed">
+      <option name="closed" value="true" />
+      <created>1687459855497</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687459855497</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,6 +454,8 @@
     <MESSAGE value="dashboard.js works" />
     <MESSAGE value="dashboard.js clean up" />
     <MESSAGE value="Dash en location sperated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dash en location sperated" />
+    <MESSAGE value="dash done" />
+    <MESSAGE value="dashlink fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashlink fixed" />
   </component>
 </project>

@@ -48,7 +48,7 @@ public class PersistenceManager {
         }
     }
 
-    public static void saveUsersToFile() throws ClassNotFoundException, IOException {
+    public static void saveUsersToFile() throws IOException {
         Path homeDire = Path.of("C:\\home");
         if (!Files.exists(homeDire)) {
             Files.createDirectory(homeDire);
@@ -85,5 +85,7 @@ public class PersistenceManager {
 
 
     }
+
+
 
 }
