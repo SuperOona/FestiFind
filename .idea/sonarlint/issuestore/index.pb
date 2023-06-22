@@ -51,10 +51,6 @@ $src/main/webapp/javaScript/forgot.js,0\c\0c0af3c871a3258be44b1cc75e3f4d30fccab
 ,src/main/java/festi/request/UserRequest.java,2\e\2ef1d05faf22c98d18776ec913c90d1314c46310
 n
 >src/main/java/festi/authentication/AuthenticationResource.java,f\5\f59d1e42f7288513c77552fb5a4d772258c22ee3
-S
-#src/main/webapp/javaScript/index.js,3\9\39d1b40808ad2053b3d856a4a9541a60e9d2e11b
-J
-src/main/webapp/index.html,1\3\1337d72a3b1928dba82aa5210f5cdc0e88ce895b
 W
 'src/main/java/festi/model/Festival.java,5\4\54128eedd8eb34f001be7daea4c65d8b64eaf95e
 a
@@ -69,7 +65,5 @@ a
 +src/test/java/festi/model/LocationTest.java,b\f\bf554231758877327a9e1ec0ea5bc828758afafd
 W
 'src/test/java/festi/model/UserTest.java,3\1\3161a06712b4f1c8c0741b8c23f78003301708f2
-X
-(src/main/webapp/javaScript/createUser.js,3\d\3dd5cdb9b498f96bc7d419405d82d1bbd13fa473
 O
 src/main/webapp/createuser.html,a\4\a43f6e8de44a57f17f4b01653d207793819c01ab

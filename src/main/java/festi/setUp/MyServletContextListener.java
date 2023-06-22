@@ -44,6 +44,17 @@ public class MyServletContextListener implements ServletContextListener {
         oona.setLocation(location);
         daphne.setLocation(location);
         daphne.setLocation(location1);
+        //make friendgroup
+        ArrayList<User> friends = new ArrayList<>();
+        friends.add(daphne);
+        friends.add(oona);
+        FriendGroup friendGroup = new FriendGroup("Zorf", festival, friends);
+        FriendGroup friendGroup2 = new FriendGroup("Lekker met de meiden", festival, friends);
+
+        daphne.addGroup(friendGroup);
+        oona.addGroup(friendGroup);
+        daphne.addGroup(friendGroup2);
+        oona.addGroup(friendGroup2);
     }
 
     @Override

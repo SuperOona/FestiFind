@@ -43,8 +43,6 @@ K
 src/main/webapp/forgot.html,4\a\4ae0fb9c879f1a4ed1efb45a46154bdd2c390b8c
 O
 src/main/webapp/style/index.css,c\3\c3698019c1a7f0d41dcea7568260835f66d8e2e9
-J
-src/main/webapp/index.html,1\3\1337d72a3b1928dba82aa5210f5cdc0e88ce895b
 a
 1src/main/java/festi/webservices/UserResource.java,3\0\3035e21509b450f305a51f79b446d02d8846986b
 T
@@ -57,8 +55,6 @@ n
 >src/main/java/festi/authentication/AuthenticationResource.java,f\5\f59d1e42f7288513c77552fb5a4d772258c22ee3
 \
 ,src/main/java/festi/request/UserRequest.java,2\e\2ef1d05faf22c98d18776ec913c90d1314c46310
-S
-#src/main/webapp/javaScript/index.js,3\9\39d1b40808ad2053b3d856a4a9541a60e9d2e11b
 [
 +src/main/java/festi/setUp/JerseyConfig.java,7\3\73ceee26fc1b3aa515b505d35101c97139a43ec7
 ^
@@ -71,5 +67,3 @@ W
 +src/test/java/festi/model/LocationTest.java,b\f\bf554231758877327a9e1ec0ea5bc828758afafd
 O
 src/main/webapp/createuser.html,a\4\a43f6e8de44a57f17f4b01653d207793819c01ab
-X
-(src/main/webapp/javaScript/createUser.js,3\d\3dd5cdb9b498f96bc7d419405d82d1bbd13fa473

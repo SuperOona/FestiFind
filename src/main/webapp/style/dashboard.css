@@ -71,16 +71,15 @@ button:focus {
 #list {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid black;
     padding: 10px;
+}
+
+#list div{
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }
 
 #list p{
     margin: 0;
     position: relative;
-}
-
-#list a{
-    display: block;
-    margin-top: 10px;
 }

@@ -9,19 +9,23 @@ function loadLocations(){
         .then(response => response.json())
         .then(myJson => {
             const listHtml = document.querySelector("#list");
-            myJson.forEach(location => {
-                console.log(location)
-                const userP = document.querySelector("#user");
-                userP.textContent = location.account;
-                listHtml.appendChild(userP);
-                const stageP = document.querySelector("#stage");
-                stageP.textContent = location.stage;
-                listHtml.appendChild(stageP);
-                const placingP = document.querySelector("#placing");
-                placingP.textContent = location.placing;
-                listHtml.appendChild(placingP);
+            myJson.forEach(group => {
+                const groupContainer = document.createElement('div');
 
+                const groupNameE = document.createElement('p');
+                groupNameE.textContent = group.groupName;
+                groupContainer.appendChild(groupNameE);
 
+                const festivalE = document.createElement('p');
+                festivalE.textContent = group.festival;
+                groupContainer.appendChild(festivalE);
+
+                const link = document.createElement('a');
+                link.href = `locations/${group.groupID}`;
+                link.textContent = 'See locations';
+                groupContainer.appendChild(link);
+
+                listHtml.appendChild(groupContainer);
             })
     }).catch(error => {
         console.log(error)

@@ -18,6 +18,7 @@ public class User implements Principal, Serializable {
     private ArrayList<User> friends;
     private static ArrayList<String> registerdEmail = new ArrayList<>();
     private static List<User> allUsers = new ArrayList<>();
+    private ArrayList<FriendGroup> groups = new ArrayList<>();
 
     public static boolean createUser(String username, String password, String email){
         if (getByEmail(email) == null){
@@ -122,15 +123,6 @@ public class User implements Principal, Serializable {
             this.friends.add(user);
         }
     }
-
-    public boolean isEmailRegistered(String email){
-        return registerdEmail.contains(email);
-    }
-
-    public static ArrayList<String> getRegisterdEmail() {
-        return registerdEmail;
-    }
-
     @Override
     public String getName() {
         return username;
@@ -141,4 +133,15 @@ public class User implements Principal, Serializable {
     }
 
 
+    public ArrayList<FriendGroup> getGroups() {
+        return groups;
+    }
+
+    public void setGroups(ArrayList<FriendGroup> groups) {
+        this.groups = groups;
+    }
+
+    public void addGroup(FriendGroup newFriendGroup) {
+        groups.add(newFriendGroup);
+    }
 }

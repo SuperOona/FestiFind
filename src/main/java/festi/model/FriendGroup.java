@@ -5,19 +5,31 @@ import java.util.UUID;
 
 public class FriendGroup {
     private String friendGroupId;
+    private String groupName;
     private Festival festival;
-    private ArrayList<Location> locations;
     private ArrayList<User> friends;
 
-    public FriendGroup(Festival festival, ArrayList<Location> locations, ArrayList<User> friends) {
+    public FriendGroup(String groupName, Festival festival, ArrayList<User> friends) {
         this.friendGroupId = UUID.randomUUID().toString();
+        this.groupName = groupName;
         this.festival = festival;
-        this.locations = locations;
         this.friends = friends;
     }
 
     public String getFriendGroupId() {
         return friendGroupId;
+    }
+
+    public void setFriendGroupId(String friendGroupId) {
+        this.friendGroupId = friendGroupId;
+    }
+
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
     }
 
     public Festival getFestival() {
@@ -26,14 +38,6 @@ public class FriendGroup {
 
     public void setFestival(Festival festival) {
         this.festival = festival;
-    }
-
-    public ArrayList<Location> getLocations() {
-        return locations;
-    }
-
-    public void setLocations(ArrayList<Location> locations) {
-        this.locations = locations;
     }
 
     public ArrayList<User> getFriends() {
