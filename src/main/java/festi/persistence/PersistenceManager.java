@@ -17,6 +17,7 @@ public class PersistenceManager {
 
 
 
+
     public static void loadUsersFromFile() throws ClassNotFoundException {
         List<User> loaded = new ArrayList<>();
         try {

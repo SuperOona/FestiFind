@@ -32,13 +32,18 @@ public class MyServletContextListener implements ServletContextListener {
         ArrayList<Artist> artists = new ArrayList<>();
         artists.add(new Artist("Oona"));
         Stage stage = new Stage("test", festival,artists);
+        Stage alpha = new Stage("alpha", festival, artists);
         //set location
         Location location = new Location(stage);
+        Location location1 = new Location(alpha);
+        location1.setPlacing(Placing.BACKCENTERN);
         location.setPlacing(Placing.CENTERN);
         location.setAccount(oona);
         location.setAccount(daphne);
+        location1.setAccount(daphne);
         oona.setLocation(location);
         daphne.setLocation(location);
+        daphne.setLocation(location1);
     }
 
     @Override

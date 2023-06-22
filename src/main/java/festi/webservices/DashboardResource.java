@@ -35,7 +35,9 @@ public class DashboardResource {
                     lR.placing = location.getPlacing();
                     Stage stage = location.getStage();
                     lR.stage = stage.getStageName();
-                    lR.account = User.getByEmail(friend.getUsername());
+                    User user = location.getAccount();
+                    String name = user.getName();
+                    lR.account = name;
                     locations.add(lR);
                 }
                 if (locations.contains(null)){

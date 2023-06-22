@@ -1,4 +1,4 @@
-function loadList(){
+function loadLocations(){
     const option = {
         method: 'GET',
         headers:{
@@ -9,19 +9,22 @@ function loadList(){
         .then(response => response.json())
         .then(myJson => {
             const listHtml = document.querySelector("#list");
-            /*myJson.location.forEach(location => {
-                const liHtml = document.createElement("li");
-                liHtml.textContent = location;
-                listHtml.appendChild(liHtml);
-            })*/
             myJson.forEach(location => {
                 console.log(location)
-                const liHtml = document.createElement("li");
-                liHtml.textContent = location.stage;
-                listHtml.appendChild(liHtml);
+                const userP = document.querySelector("#user");
+                userP.textContent = location.account;
+                listHtml.appendChild(userP);
+                const stageP = document.querySelector("#stage");
+                stageP.textContent = location.stage;
+                listHtml.appendChild(stageP);
+                const placingP = document.querySelector("#placing");
+                placingP.textContent = location.placing;
+                listHtml.appendChild(placingP);
+
+
             })
     }).catch(error => {
         console.log(error)
     })
 }
-document.addEventListener("DOMContentLoaded", loadList);
+document.addEventListener("DOMContentLoaded", loadLocations);
