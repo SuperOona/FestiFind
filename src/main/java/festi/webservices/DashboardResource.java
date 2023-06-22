@@ -43,7 +43,7 @@ public class DashboardResource {
                         return Response.status(404).entity("No locations found").build();
                     }
                     return Response.ok(locations).build();
-                
+
 
             }
             return Response.status(404).entity("No friends found").build();

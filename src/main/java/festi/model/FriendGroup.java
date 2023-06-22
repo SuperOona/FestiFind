@@ -9,12 +9,25 @@ public class FriendGroup {
     private Festival festival;
     private ArrayList<User> friends;
 
+    private static ArrayList<FriendGroup> allGroups = new ArrayList<>();
+
     public FriendGroup(String groupName, Festival festival, ArrayList<User> friends) {
         this.friendGroupId = UUID.randomUUID().toString();
         this.groupName = groupName;
         this.festival = festival;
         this.friends = friends;
     }
+
+    public static void setGroups(ArrayList<FriendGroup> loaded) {
+        for (FriendGroup group : loaded){
+            allGroups.add(group);
+        }
+    }
+
+    public static ArrayList<FriendGroup> getGroups() {
+        return allGroups;
+    }
+
 
     public String getFriendGroupId() {
         return friendGroupId;
