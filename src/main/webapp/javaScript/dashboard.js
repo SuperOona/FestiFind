@@ -21,7 +21,7 @@ function loadLocations(){
                 groupContainer.appendChild(festivalE);
 
                 const link = document.createElement('a');
-                link.href = `locations/${group.groupID}`;
+                link.href = `locations.html?groupID=${group.groupID}`;
                 link.textContent = 'See locations';
                 groupContainer.appendChild(link);
 
