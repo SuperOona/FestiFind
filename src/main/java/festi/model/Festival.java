@@ -12,17 +12,23 @@ public class Festival {
     private ArrayList<Date> date;
     private ArrayList<Stage> stages;
 
-    private static ArrayList<Festival> allFestivals;
+    private static ArrayList<Festival> allFestivals = new ArrayList<>();
 
-    public Festival(String name, ArrayList<Date> date) {
+    private Festival(String name, ArrayList<Date> date) {
         this.festId = UUID.randomUUID().toString();
         this.name = name;
         this.date = date;
     }
 
-    /*public static boolean createFestival(String name, ArrayList<Date>){
+    public static ArrayList<Festival> getAllFestivals() {
+        return allFestivals;
+    }
 
-    }*/
+    public static Festival createFestival(String name, ArrayList<Date> dates){
+        Festival festival = new Festival(name, dates);
+        allFestivals.add(festival);
+        return festival;
+    }
     public String getFestId() {
         return festId;
     }
@@ -51,4 +57,11 @@ public class Festival {
     public void addStages(Stage stage) {
         this.stages.add(stage);
     }
+   /* public static void main(String[] args) {
+        ArrayList<Date> dates = new ArrayList<>();
+        dates.add(new Date(2024, 01, 18));
+        System.out.println(createFestival("main", dates));
+        System.out.println(Festival.getAllFestivals());
+    }*/
 }
+

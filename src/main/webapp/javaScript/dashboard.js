@@ -31,4 +31,15 @@ function loadLocations(){
         console.log(error)
     })
 }
+
 document.addEventListener("DOMContentLoaded", loadLocations);
+
+
+function loadAddGroupPage(){
+    window.location.href = "addGroup.html";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Your code here, including the event listener
+    document.querySelector("#add").addEventListener("click", loadAddGroupPage);
+});

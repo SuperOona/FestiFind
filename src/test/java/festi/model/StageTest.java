@@ -24,7 +24,7 @@ public class StageTest {
         Date date = new Date(2000, 01, 18);
         dates.add(date);
 
-        Festival oonaFest = new Festival("OonaFest", dates);
+        Festival oonaFest = Festival.createFestival("OonaFest", dates);
         Artist oona = new Artist("Oona Bertrums");
         ArrayList<Artist> artists = new ArrayList<>();
         artists.add(oona);
@@ -40,7 +40,7 @@ public class StageTest {
         Date date = new Date(2000, 01, 18);
         dates.add(date);
 
-        Festival oonaFest = new Festival("OonaFest", dates);
+        Festival oonaFest = Festival.createFestival("OonaFest", dates);
         Artist oona = new Artist("Oona Bertrums");
         ArrayList<Artist> artists = new ArrayList<>();
         artists.add(oona);

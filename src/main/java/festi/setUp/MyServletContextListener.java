@@ -28,7 +28,7 @@ public class MyServletContextListener implements ServletContextListener {
         //make festval
         ArrayList<Date> dates = new ArrayList<>();
         dates.add(new Date(2024, 01, 18));
-        Festival festival = new Festival("test", dates);
+        Festival festival = Festival.createFestival("test", dates);
         ArrayList<Artist> artists = new ArrayList<>();
         artists.add(new Artist("Oona"));
         Stage stage = new Stage("test", festival,artists);

@@ -23,7 +23,7 @@ public class LocationTest {
         ArrayList<Artist> artists = new ArrayList<>();
         artists.add(oona);
 
-        Festival oonaFest = new Festival("oonaFest", dates);
+        Festival oonaFest = Festival.createFestival("oonaFest", dates);
         Stage camp = new Stage("camp", oonaFest, artists);
         createUser("superOona", "OonaIsCool2", "o@hot.com");
         User user = getByEmail("o@hot.com");
@@ -45,7 +45,7 @@ public class LocationTest {
         //make festval
         ArrayList<Date> dates = new ArrayList<>();
         dates.add(new Date(2024, 01, 18));
-        Festival festival = new Festival("test", dates);
+        Festival festival = Festival.createFestival("test", dates);
         ArrayList<Artist> artists = new ArrayList<>();
         artists.add(new Artist("Oona"));
         Stage stage = new Stage("test", festival,artists);
