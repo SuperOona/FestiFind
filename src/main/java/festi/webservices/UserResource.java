@@ -57,16 +57,15 @@ public class UserResource {
     @Path("/getFriend")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getFriend(@Context SecurityContext context, FriendReqeust friendReqeust){
+    public Response getFriend(@Context SecurityContext context){
         if (context.getUserPrincipal() instanceof User current){
             List<User> friends = current.getFriends();
             if (!friends.isEmpty()){
-                for (User friend : friends){
-                    if (friend.getName().equals(friendReqeust.username)){
-                        return Response.ok(friend.getUsername()).build();
-                    }
-                    return Response.status(404).entity("No by that name found").build();
+                List<String> names = new ArrayList<>();
+                for (User user : friends){
+                    names.add(user.getUsername());
                 }
+                return Response.ok(names).build();
             }
             return Response.status(404).entity("No friends found").build();
         }

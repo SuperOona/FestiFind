@@ -25,17 +25,52 @@ function loadGroupPage() {
 
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Your code here, including the event listener
-    document.querySelector("#addFriends").addEventListener("click", search);
-
-    document.querySelector("#addGroup").addEventListener("click", addGroup);
-});
-
 function search() {
-    fetch()
+    let form = document.querySelector("#groupform")
+    let searchterm = {
+        username: form.friend.value
+    }
+    const option = {
+        method: 'GET',
+        headers:{
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + window.sessionStorage.getItem("myJWT")
+        }
+    }
+    fetch("restservices/users/getFriend", option)
+        .then(function (response) {
+            if (response.ok){
+                return response.json();
+            }
+            throw new Error("Friend not found");
+        })
+        .then(myJson => {
+            const friendContainer = document.querySelector('#added');
+
+            const friends = Object.values(myJson);
+
+            friends.forEach(friend => {
+                 if(friend === searchterm.username){
+                    const paragraphElement = document.createElement('p');
+                    paragraphElement.textContent =  friend;
+                    friendContainer.appendChild(paragraphElement);
+                }
+            });
+
+
+        })
+        .catch(error => console.log(error));
 
 }
 function addGroup() {
 
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Your code here, including the event listener
+    document.querySelector("#search").addEventListener("click", search);
+});
+document.addEventListener("DOMContentLoaded", function() {
+    // Your code here, including the event listener
+    document.querySelector("#addGroup").addEventListener("click", addGroup);
+});

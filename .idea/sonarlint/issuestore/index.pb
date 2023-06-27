@@ -45,8 +45,6 @@ $src/main/webapp/javaScript/forgot.js,0\c\0c0af3c871a3258be44b1cc75e3f4d30fccab
 .src/main/java/festi/request/ForgotRequest.java,8\c\8c66feedb8b3fd6cca66ccebbb5920b836324f97
 W
 'src/test/java/festi/model/UserTest.java,3\1\3161a06712b4f1c8c0741b8c23f78003301708f2
-X
-(src/main/webapp/javaScript/createUser.js,3\d\3dd5cdb9b498f96bc7d419405d82d1bbd13fa473
 W
 'src/main/java/festi/model/Location.java,4\8\484869ebed7bc30c0f556d6873305c82f9b6e5d9
 T

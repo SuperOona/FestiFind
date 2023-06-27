@@ -20,9 +20,12 @@ public class MyServletContextListener implements ServletContextListener {
     private void makeTestData() {
         createUser("superOona", "oona", "o@hot.com");
         createUser("dahpeWest", "daphne", "d@hot.com");
+        createUser("nickvanSimon", "nick", "n@hot.com");
         createAdmin("admin","adminGod","admin@festifind.nl");
         User oona = getByEmail("o@hot.com");
         User daphne = getByEmail("d@hot.com");
+        User nick = getByEmail("n@hot.com");
+        oona.addFriend(nick);
         oona.addFriend(daphne);
         daphne.addFriend(oona);
         //make festval

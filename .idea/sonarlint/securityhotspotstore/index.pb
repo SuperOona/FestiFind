@@ -51,8 +51,6 @@ T
 $src/main/java/festi/model/Stage.java,6\1\6178d235abfcc6303412fd2341788ce9dc113ffb
 W
 'src/main/java/festi/model/Location.java,4\8\484869ebed7bc30c0f556d6873305c82f9b6e5d9
-X
-(src/main/webapp/javaScript/createUser.js,3\d\3dd5cdb9b498f96bc7d419405d82d1bbd13fa473
 ]
 -src/main/java/festi/request/GroupReqeust.java,c\5\c53464cdcae6a39609e4815cbc601a17fcce5bd0
 g
