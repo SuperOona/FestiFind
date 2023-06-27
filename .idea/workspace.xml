@@ -10,12 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/festi/request/FriendReqeust.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/variables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/addGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/addGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +312,7 @@
       <workItem from="1687509594481" duration="1176000" />
       <workItem from="1687773557806" duration="1047000" />
       <workItem from="1687852844998" duration="135000" />
-      <workItem from="1687853030390" duration="6521000" />
+      <workItem from="1687853030390" duration="9267000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>
@@ -462,7 +463,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687859356378</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="css fixed">
+      <option name="closed" value="true" />
+      <created>1687860405349</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1687860405349</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,6 +499,7 @@
     <MESSAGE value="Locations done" />
     <MESSAGE value="Group PersistenceManager made" />
     <MESSAGE value="Add group back-end is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add group back-end is done" />
+    <MESSAGE value="css fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="css fixed" />
   </component>
 </project>

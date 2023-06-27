@@ -1,12 +1,21 @@
 package festi.webservices;
 
+import festi.model.FriendGroup;
+import festi.model.Location;
+import festi.model.Stage;
 import festi.model.User;
 import festi.request.ForgotRequest;
+import festi.request.FriendReqeust;
+import festi.request.LocationRequest;
 import festi.request.UserRequest;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.SecurityContext;
+import java.util.ArrayList;
+import java.util.List;
 
 @Path("/users")
 public class UserResource {
@@ -42,6 +51,26 @@ public class UserResource {
         }
         return Response.status(Response.Status.EXPECTATION_FAILED).entity("Password couldn't be change, check email").build();
 
+    }
+
+    @GET
+    @Path("/getFriend")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getFriend(@Context SecurityContext context, FriendReqeust friendReqeust){
+        if (context.getUserPrincipal() instanceof User current){
+            List<User> friends = current.getFriends();
+            if (!friends.isEmpty()){
+                for (User friend : friends){
+                    if (friend.getName().equals(friendReqeust.username)){
+                        return Response.ok(friend.getUsername()).build();
+                    }
+                    return Response.status(404).entity("No by that name found").build();
+                }
+            }
+            return Response.status(404).entity("No friends found").build();
+        }
+        return Response.status(404).entity("No user found").build();
     }
 
 

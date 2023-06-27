@@ -26,7 +26,6 @@ function loadLocations(){
 
                 listHtml.appendChild(container);
 
-
             })
         }).catch(error => {
         console.log(error)

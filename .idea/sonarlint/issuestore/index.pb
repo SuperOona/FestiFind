@@ -43,8 +43,6 @@ T
 $src/main/webapp/javaScript/forgot.js,0\c\0c0af3c871a3258be44b1cc75e3f4d30fccab6d0
 ^
 .src/main/java/festi/request/ForgotRequest.java,8\c\8c66feedb8b3fd6cca66ccebbb5920b836324f97
-]
--src/main/java/festi/request/LoginReqeust.java,3\f\3ff0fb0df90495b4f21d19ed24387ec74be1ce4d
 W
 'src/test/java/festi/model/UserTest.java,3\1\3161a06712b4f1c8c0741b8c23f78003301708f2
 X
@@ -61,9 +59,3 @@ g
 7src/main/java/festi/persistence/PersistenceManager.java,6\7\678a9a275ff66db30e9bc5340d4728a72770825a
 Z
 *src/main/java/festi/model/FriendGroup.java,7\9\79f49d601dd24f46e910fc94e166cb8166eb4212
-W
-'src/main/webapp/javaScript/locations.js,d\6\d63d38a9da04a4eb581c31f0e756397806f22f35
-N
-src/main/webapp/locations.html,b\7\b72655f8e09c2a17a7fb8cb25e4e907b870c2dd4
-\
-,src/main/java/festi/request/UserRequest.java,2\e\2ef1d05faf22c98d18776ec913c90d1314c46310

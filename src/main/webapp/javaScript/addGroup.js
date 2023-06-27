@@ -27,10 +27,15 @@ function loadGroupPage() {
 
 document.addEventListener("DOMContentLoaded", function() {
     // Your code here, including the event listener
-    document.querySelector("#addFriends").addEventListener("click", addGroup);
+    document.querySelector("#addFriends").addEventListener("click", search);
 
     document.querySelector("#addGroup").addEventListener("click", addGroup);
 });
+
+function search() {
+    fetch()
+
+}
 function addGroup() {
 
 }
