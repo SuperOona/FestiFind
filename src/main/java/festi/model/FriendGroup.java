@@ -3,6 +3,8 @@ package festi.model;
 import java.util.ArrayList;
 import java.util.UUID;
 
+import static festi.model.Festival.getByName;
+
 public class FriendGroup {
     private String friendGroupId;
     private String groupName;
@@ -14,7 +16,7 @@ public class FriendGroup {
     public FriendGroup(String groupName, String festival, ArrayList<User> friends) {
         this.friendGroupId = UUID.randomUUID().toString();
         this.groupName = groupName;
-        this.festival = Festival.getAllFestivals().;
+        this.festival = getByName(festival);
         this.friends = friends;
     }
 

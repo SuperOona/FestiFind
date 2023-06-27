@@ -58,7 +58,7 @@ public class Festival {
         this.stages.add(stage);
     }
 
-    public Festival getByName(String name){
+    public static Festival getByName(String name){
         for (Festival feest : getAllFestivals()){
             if (feest.name == name){
                 return feest;
