@@ -29,8 +29,6 @@ Q.idea/sonarlint/securityhotspotstore/2/5/254caa32711bdb3dd5513473b87bdf1ddfff62
 Q.idea/sonarlint/securityhotspotstore/e/d/edf547a8088eac3dd92e172f221d7b46ebce5ced,d\2\d26491ee98f91e78d56bc399d57b6a5c7145a10f
 i
 9src/main/java/festi/authentication/MySecurityContext.java,f\b\fb747100586c693058830ebcbabc9905c84ffec6
-S
-#src/main/webapp/style/variables.css,b\5\b5a1da9f24add76588a9228f98a9463f2ccf4fa1
 l
 <src/main/java/festi/authentication/AuthenticationFilter.java,e\7\e7016d9fcb0285599003a652b2c60c0fb8445b91
 U

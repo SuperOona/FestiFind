@@ -31,8 +31,6 @@ i
 9src/main/java/festi/authentication/MySecurityContext.java,f\b\fb747100586c693058830ebcbabc9905c84ffec6
 l
 <src/main/java/festi/authentication/AuthenticationFilter.java,e\7\e7016d9fcb0285599003a652b2c60c0fb8445b91
-S
-#src/main/webapp/style/variables.css,b\5\b5a1da9f24add76588a9228f98a9463f2ccf4fa1
 U
 %src/main/java/festi/model/Artist.java,3\7\37c9b467dc6786989500f763702a6149468fb16f
 k
