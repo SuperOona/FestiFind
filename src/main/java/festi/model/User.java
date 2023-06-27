@@ -49,6 +49,12 @@ public class User implements Principal, Serializable {
                 .findFirst().orElse(null);
     }
 
+    public static User getByUsername(String username) {
+        return allUsers.stream()
+                .filter(user -> user.username.equals(username))
+                .findFirst().orElse(null);
+    }
+
     private User(String username, String password, String email, String role) {
         if (registerdEmail.contains(email)) throw new IllegalArgumentException("Email in use");
         this.username = username;

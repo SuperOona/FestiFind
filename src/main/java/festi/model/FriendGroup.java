@@ -11,10 +11,10 @@ public class FriendGroup {
 
     private static ArrayList<FriendGroup> allGroups = new ArrayList<>();
 
-    public FriendGroup(String groupName, Festival festival, ArrayList<User> friends) {
+    public FriendGroup(String groupName, String festival, ArrayList<User> friends) {
         this.friendGroupId = UUID.randomUUID().toString();
         this.groupName = groupName;
-        this.festival = festival;
+        this.festival = Festival.getAllFestivals().;
         this.friends = friends;
     }
 

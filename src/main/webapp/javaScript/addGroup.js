@@ -63,6 +63,30 @@ function search() {
 
 }
 function addGroup() {
+    let form = document.querySelector("#groupform")
+    let groupBody = {
+        username: form.friend.value
+    }
+    const option = {
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + window.sessionStorage.getItem("myJWT")
+        },
+        body: JSON.stringify(groupBody)
+    }
+
+    fetch("", option)
+        .then(function (response) {
+            if (response.ok){
+                return response.json();
+            }
+            throw new Error("Wrong email/password");
+        })
+        .then(myJson => {
+            window.location.href = "/dashboard.html"
+        })
+        .catch(error => console.log(error));
 
 }
 

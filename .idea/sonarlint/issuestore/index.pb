@@ -51,9 +51,5 @@ T
 $src/main/java/festi/model/Stage.java,6\1\6178d235abfcc6303412fd2341788ce9dc113ffb
 `
 0src/main/java/festi/request/LocationRequest.java,6\f\6f8cce3077b06c77845fc0ea0c133828bda99b7e
-]
--src/main/java/festi/request/GroupReqeust.java,c\5\c53464cdcae6a39609e4815cbc601a17fcce5bd0
 g
 7src/main/java/festi/persistence/PersistenceManager.java,6\7\678a9a275ff66db30e9bc5340d4728a72770825a
-Z
-*src/main/java/festi/model/FriendGroup.java,7\9\79f49d601dd24f46e910fc94e166cb8166eb4212

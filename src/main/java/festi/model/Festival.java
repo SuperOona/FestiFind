@@ -57,6 +57,15 @@ public class Festival {
     public void addStages(Stage stage) {
         this.stages.add(stage);
     }
+
+    public Festival getByName(String name){
+        for (Festival feest : getAllFestivals()){
+            if (feest.name == name){
+                return feest;
+            }
+        }
+        return null;
+    }
    /* public static void main(String[] args) {
         ArrayList<Date> dates = new ArrayList<>();
         dates.add(new Date(2024, 01, 18));
