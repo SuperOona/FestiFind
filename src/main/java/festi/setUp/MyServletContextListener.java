@@ -51,8 +51,10 @@ public class MyServletContextListener implements ServletContextListener {
         ArrayList<User> friends = new ArrayList<>();
         friends.add(daphne);
         friends.add(oona);
-        FriendGroup friendGroup = new FriendGroup("Zorf", festival, friends);
-        FriendGroup friendGroup2 = new FriendGroup("Lekker met de meiden", festival, friends);
+        FriendGroup friendGroup = new FriendGroup("Zorf", "test");
+        friendGroup.setFriends(friends);
+        FriendGroup friendGroup2 = new FriendGroup("Lekker met de meiden", "test");
+        friendGroup2.setFriends(friends);
 
         daphne.addGroup(friendGroup);
         oona.addGroup(friendGroup);
