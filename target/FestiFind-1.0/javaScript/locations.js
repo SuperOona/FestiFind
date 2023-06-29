@@ -31,4 +31,14 @@ function loadLocations(){
         console.log(error)
     })
 }
+function loadAddLocationPage() {
+    window.location.href = "/addLocation.html";
+
+}
 document.addEventListener("DOMContentLoaded", loadLocations);
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Your code here, including the event listener
+    document.querySelector("#add").addEventListener("click", loadAddLocationPage);
+});
+

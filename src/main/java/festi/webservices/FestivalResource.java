@@ -7,7 +7,6 @@ import festi.request.GroupReqeust;
 import festi.request.MakeGroupRequest;
 
 import javax.annotation.security.RolesAllowed;
-import javax.servlet.ServletContext;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
@@ -32,7 +31,7 @@ public class FestivalResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response makeGroup(@Context SecurityContext context, MakeGroupRequest groupReqeust){
         if (context.getUserPrincipal() instanceof User current){
-            
+
             ArrayList<User> friends = new ArrayList<>();
             FriendGroup friendGroup = new FriendGroup(groupReqeust.groupname, groupReqeust.festival);
             friends.add(current);
