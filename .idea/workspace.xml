@@ -10,25 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="makeFriendgroup not finshed starting addLocation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/request/addLocationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/LocationsResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/addLocation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/addLocation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/add.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/484869ebed7bc30c0f556d6873305c82f9b6e5d9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/6178d235abfcc6303412fd2341788ce9dc113ffb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f8cce3077b06c77845fc0ea0c133828bda99b7e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/8/484869ebed7bc30c0f556d6873305c82f9b6e5d9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/1/6178d235abfcc6303412fd2341788ce9dc113ffb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/f/6f8cce3077b06c77845fc0ea0c133828bda99b7e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/FestivalResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/FestivalResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FestiFind-1.0/WEB-INF/classes/festi/webservices/FestivalResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FestiFind-1.0/WEB-INF/classes/festi/webservices/FestivalResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FestiFind-1.0/javaScript/locations.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/FestiFind-1.0/javaScript/locations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/festi/webservices/FestivalResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/festi/webservices/FestivalResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/LocationsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/LocationsResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +306,7 @@
       <workItem from="1687509594481" duration="1176000" />
       <workItem from="1687773557806" duration="1047000" />
       <workItem from="1687852844998" duration="135000" />
-      <workItem from="1687853030390" duration="37826000" />
+      <workItem from="1687853030390" duration="37881000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>

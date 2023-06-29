@@ -21,10 +21,8 @@ public class LocationsResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response addLocation(@Context SecurityContext context, LocationRequest locationRequest){
         if (context.getUserPrincipal() instanceof User current){
-            
-            Location location = new Location(locationRequest.stage);
-
-            current.setLocation(location);
+            return Response.ok(current).build();
         }
+        return Response.status(404).entity("No user found").build();
     }
 }
