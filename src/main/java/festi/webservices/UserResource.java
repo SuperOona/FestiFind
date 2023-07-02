@@ -1,12 +1,7 @@
 package festi.webservices;
 
-import festi.model.FriendGroup;
-import festi.model.Location;
-import festi.model.Stage;
 import festi.model.User;
 import festi.request.ForgotRequest;
-import festi.request.FriendReqeust;
-import festi.request.LocationRequest;
 import festi.request.UserRequest;
 
 import javax.ws.rs.*;

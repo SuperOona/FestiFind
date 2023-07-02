@@ -24,7 +24,8 @@ public class LocationTest {
         artists.add(oona);
 
         Festival oonaFest = Festival.createFestival("oonaFest", dates);
-        Stage camp = new Stage("camp", oonaFest, artists);
+        Stage camp = new Stage("camp", artists);
+        oonaFest.addStages(camp);
         createUser("superOona", "OonaIsCool2", "o@hot.com");
         User user = getByEmail("o@hot.com");
         Location location = new Location(camp);
@@ -48,7 +49,8 @@ public class LocationTest {
         Festival festival = Festival.createFestival("test", dates);
         ArrayList<Artist> artists = new ArrayList<>();
         artists.add(new Artist("Oona"));
-        Stage stage = new Stage("test", festival,artists);
+        Stage stage = new Stage("test", artists);
+        festival.addStages(stage);
         //set location
         Location location = new Location(stage);
         oona.setLocation(location);

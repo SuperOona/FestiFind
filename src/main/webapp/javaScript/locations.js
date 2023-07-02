@@ -5,9 +5,7 @@ function loadLocations(){
             'Authorization': 'Bearer ' + window.sessionStorage.getItem("myJWT")
         }
     }
-    const urlP = new URLSearchParams(window.location.search);
-    const id = urlP.get('groupID')
-    fetch(`restservices/dashboard/locations/${id}`, option)
+    fetch("/rest/dashboard/locations", option)
         .then(response => response.json())
         .then(myJson => {
             const listHtml = document.querySelector("#list");
@@ -31,4 +29,12 @@ function loadLocations(){
         console.log(error)
     })
 }
-document.addEventListener("DOMContentLoaded", loadLocations);
+function loadAddLocationsPage(){
+    window.location.href = "addLocations.html";
+}
+document.addEventListener("DOMContentLoaded", loadLocations)
+document.addEventListener("DOMContentLoaded", function() {
+    // Your code here, including the event listener
+
+    document.querySelector("#addLocation").addEventListener("click", loadAddLocationsPage);
+});

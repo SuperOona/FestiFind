@@ -10,15 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/request/MakeGroupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/LocationResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/addLocations.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/addLocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/add.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Festival.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Festival.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/FriendGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/FriendGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/FriendGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Stage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/persistence/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/persistence/PersistenceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/request/GroupReqeust.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/request/MakeGroupRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/setUp/JerseyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/JerseyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/FestivalResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/FestivalResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/addGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/addGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addGroup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/addGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/createUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/createUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/forgot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/forgot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/locations.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/locations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/festi/model/LocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/festi/model/LocationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/festi/model/StageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/festi/model/StageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +49,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JUnit5 Test Class" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
@@ -131,6 +152,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FestivalResource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="festi.webservices.FestivalResource" />
+      <module name="FestiFind" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="festi.webservices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PersistenceManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="festi.persistence.PersistenceManager" />
       <module name="FestiFind" />
@@ -156,15 +190,6 @@
       <option name="MAIN_CLASS_NAME" value="festi.persistence.PersistenceManagerTest" />
       <option name="METHOD_NAME" value="loadUsersFromFileTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FestiFind" />
-      <option name="PACKAGE_NAME" value="festi.model" />
-      <option name="MAIN_CLASS_NAME" value="festi.model.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -270,19 +295,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Festival" />
+      <item itemvalue="Application.FestivalResource" />
       <item itemvalue="Application.PersistenceManager" />
       <item itemvalue="JUnit.PersistenceManagerTest.loadUsersFromFileTest" />
-      <item itemvalue="JUnit.UserTest" />
       <item itemvalue="JUnit.UserTest.emailUnique" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.73" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FestivalResource" />
         <item itemvalue="Application.Festival" />
         <item itemvalue="Application.PersistenceManager" />
         <item itemvalue="JUnit.PersistenceManagerTest.loadUsersFromFileTest" />
         <item itemvalue="JUnit.UserTest.emailUnique" />
-        <item itemvalue="JUnit.UserTest" />
       </list>
     </recent_temporary>
   </component>

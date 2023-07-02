@@ -18,7 +18,6 @@ public class User implements Principal, Serializable {
     private ArrayList<User> friends;
     private static ArrayList<String> registerdEmail = new ArrayList<>();
     private static List<User> allUsers = new ArrayList<>();
-    private ArrayList<FriendGroup> groups = new ArrayList<>();
 
     public static boolean createUser(String username, String password, String email){
         if (getByEmail(email) == null){
@@ -136,27 +135,5 @@ public class User implements Principal, Serializable {
 
     public String getRole() {
         return role;
-    }
-
-
-    public ArrayList<FriendGroup> getGroups() {
-        return groups;
-    }
-
-    public void setGroups(ArrayList<FriendGroup> groups) {
-        this.groups = groups;
-    }
-
-    public void addGroup(FriendGroup newFriendGroup) {
-        groups.add(newFriendGroup);
-    }
-
-    public FriendGroup getGroupById(String id){
-        for (FriendGroup group : groups){
-            if (group.getFriendGroupId().equals(id)){
-                return group;
-            }
-        }
-        return null;
     }
 }

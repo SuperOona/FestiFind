@@ -12,6 +12,9 @@ public class Location {
         this.locationId = UUID.randomUUID().toString();
         this.stage = stage;
     }
+    /*public Location createLocation(String stage){
+
+    }*/
 
     public String getLocationId() {
         return locationId;

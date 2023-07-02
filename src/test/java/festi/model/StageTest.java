@@ -28,7 +28,8 @@ public class StageTest {
         Artist oona = new Artist("Oona Bertrums");
         ArrayList<Artist> artists = new ArrayList<>();
         artists.add(oona);
-        Stage main = new Stage("main", oonaFest, artists);
+        Stage main = new Stage("main", artists);
+        oonaFest.addStages(main);
 
 
         assertEquals(main.getArtist(), artists);
@@ -44,7 +45,8 @@ public class StageTest {
         Artist oona = new Artist("Oona Bertrums");
         ArrayList<Artist> artists = new ArrayList<>();
         artists.add(oona);
-        Stage main = new Stage("main", oonaFest, artists);
+        Stage main = new Stage("main", artists);
+        oonaFest.addStages(main);
 
         main.addArtist(oona);
 

@@ -1,6 +1,5 @@
 package festi.persistence;
 
-import festi.model.FriendGroup;
 import festi.model.User;
 
 import java.io.*;
@@ -8,7 +7,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import static festi.model.User.*;
 
@@ -87,29 +85,5 @@ public class PersistenceManager {
 
     }
 
-    public static void loadGroups() throws ClassNotFoundException, IOException {
-        Path groupStorage = Path.of(localUserStorage + "group.obj");
-
-        InputStream is = Files.newInputStream(groupStorage);
-        ObjectInputStream objectInputStream = new ObjectInputStream(is);
-
-        ArrayList<FriendGroup> loaded = (ArrayList<FriendGroup>) objectInputStream.readObject();
-        FriendGroup.setGroups(loaded);
-    }
-
-    public static void saveGroups() throws IOException {
-        Path homeDire = Path.of("C:\\home");
-        if (!Files.exists(homeDire)) {
-            Files.createDirectory(homeDire);
-        }
-
-        ArrayList<FriendGroup> toSave = FriendGroup.getGroups();
-        Path groupStorage = Path.of(localUserStorage + "group.obj");
-
-        OutputStream os = Files.newOutputStream(groupStorage);
-        ObjectOutputStream outputStream = new ObjectOutputStream(os);
-
-        outputStream.writeObject(toSave);
-    }
 
 }

@@ -29,8 +29,6 @@ Q.idea/sonarlint/securityhotspotstore/2/5/254caa32711bdb3dd5513473b87bdf1ddfff62
 Q.idea/sonarlint/securityhotspotstore/e/d/edf547a8088eac3dd92e172f221d7b46ebce5ced,d\2\d26491ee98f91e78d56bc399d57b6a5c7145a10f
 i
 9src/main/java/festi/authentication/MySecurityContext.java,f\b\fb747100586c693058830ebcbabc9905c84ffec6
-l
-<src/main/java/festi/authentication/AuthenticationFilter.java,e\7\e7016d9fcb0285599003a652b2c60c0fb8445b91
 U
 %src/main/java/festi/model/Artist.java,3\7\37c9b467dc6786989500f763702a6149468fb16f
 7
@@ -39,17 +37,7 @@ k
 ;src/test/java/festi/persistence/PersistenceManagerTest.java,f\c\fcca4ae2e2ab710aad0e0830c04c3a03adad8f92
 K
 src/main/webapp/forgot.html,4\a\4ae0fb9c879f1a4ed1efb45a46154bdd2c390b8c
-T
-$src/main/webapp/javaScript/forgot.js,0\c\0c0af3c871a3258be44b1cc75e3f4d30fccab6d0
 ^
 .src/main/java/festi/request/ForgotRequest.java,8\c\8c66feedb8b3fd6cca66ccebbb5920b836324f97
 W
 'src/test/java/festi/model/UserTest.java,3\1\3161a06712b4f1c8c0741b8c23f78003301708f2
-`
-0src/main/java/festi/request/LocationRequest.java,6\f\6f8cce3077b06c77845fc0ea0c133828bda99b7e
-T
-$src/main/java/festi/model/Stage.java,6\1\6178d235abfcc6303412fd2341788ce9dc113ffb
-W
-'src/main/java/festi/model/Location.java,4\8\484869ebed7bc30c0f556d6873305c82f9b6e5d9
-g
-7src/main/java/festi/persistence/PersistenceManager.java,6\7\678a9a275ff66db30e9bc5340d4728a72770825a

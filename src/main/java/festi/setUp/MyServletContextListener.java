@@ -28,14 +28,17 @@ public class MyServletContextListener implements ServletContextListener {
         oona.addFriend(nick);
         oona.addFriend(daphne);
         daphne.addFriend(oona);
+        nick.addFriend(oona);
         //make festval
         ArrayList<Date> dates = new ArrayList<>();
         dates.add(new Date(2024, 01, 18));
         Festival festival = Festival.createFestival("test", dates);
         ArrayList<Artist> artists = new ArrayList<>();
         artists.add(new Artist("Oona"));
-        Stage stage = new Stage("test", festival,artists);
-        Stage alpha = new Stage("alpha", festival, artists);
+        Stage stage = new Stage("test", artists);
+        Stage alpha = new Stage("alpha", artists);
+        festival.addStages(alpha);
+        festival.addStages(stage);
         //set location
         Location location = new Location(stage);
         Location location1 = new Location(alpha);
@@ -43,21 +46,16 @@ public class MyServletContextListener implements ServletContextListener {
         location.setPlacing(Placing.CENTERN);
         location.setAccount(oona);
         location.setAccount(daphne);
-        location1.setAccount(daphne);
+        location1.setAccount(nick);
         oona.setLocation(location);
         daphne.setLocation(location);
-        daphne.setLocation(location1);
+        nick.setLocation(location1);
         //make friendgroup
         ArrayList<User> friends = new ArrayList<>();
         friends.add(daphne);
         friends.add(oona);
-        FriendGroup friendGroup = new FriendGroup("Zorf", festival, friends);
-        FriendGroup friendGroup2 = new FriendGroup("Lekker met de meiden", festival, friends);
+        friends.add(nick);
 
-        daphne.addGroup(friendGroup);
-        oona.addGroup(friendGroup);
-        daphne.addGroup(friendGroup2);
-        oona.addGroup(friendGroup2);
     }
 
     @Override

@@ -9,7 +9,7 @@ function forgot(){
         headers:{'Content-Type': 'application/json'},
         body: JSON.stringify(data)
     }
-    fetch("restservices/users/forgot", option)
+    fetch("rest/users/forgot", option)
         .then(function (resp){
             resp.json();
             console.log(resp)

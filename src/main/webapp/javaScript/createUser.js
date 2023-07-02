@@ -10,7 +10,7 @@ function createUser(){
         headers:{'Content-Type': 'application/json'},
         body: JSON.stringify(data)
     }
-    fetch("restservices/users/create", option)
+    fetch("rest/users/create", option)
         .then(function (resp){
             resp.json();
         }).then(function (result){

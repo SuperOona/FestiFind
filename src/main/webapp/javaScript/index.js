@@ -8,7 +8,7 @@ function login(){
         body: JSON.stringify(jsonBody)
     }
     console.log(jsonBody)
-    fetch("/restservices/authentication", option)
+    fetch("/rest/authentication", option)
         .then(function (response) {
             if (response.ok){
                 return response.json();
@@ -17,7 +17,7 @@ function login(){
         })
         .then(myJson => {
             window.sessionStorage.setItem("myJWT", myJson.JWT);
-            window.location.href = "/dashboard.html"
+            window.location.href = "/locations.html"
         })
         .catch(error => console.log(error));
 }

@@ -10,7 +10,7 @@ public class Festival {
     private String festId;
     private String name;
     private ArrayList<Date> date;
-    private ArrayList<Stage> stages;
+    private ArrayList<Stage> stages = new ArrayList<>();
 
     private static ArrayList<Festival> allFestivals = new ArrayList<>();
 
@@ -60,7 +60,7 @@ public class Festival {
 
     public static Festival getByName(String name){
         for (Festival feest : getAllFestivals()){
-            if (feest.name == name){
+            if (feest.name.equals(name)){
                 return feest;
             }
         }
