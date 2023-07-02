@@ -21,6 +21,7 @@ public class DashboardResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response getLocations(@Context SecurityContext context){
         if (context.getUserPrincipal() instanceof User current){
+            System.out.println(current.getName());
                 List<User> friends = current.getFriends();
                 if (!friends.isEmpty()){
                     List<LocationRequest> locations = new ArrayList<>();
@@ -31,8 +32,7 @@ public class DashboardResource {
                         Stage stage = location.getStage();
                         lR.stage = stage.getStageName();
                         User user = location.getAccount();
-                        String name = user.getName();
-                        lR.account = name;
+                        lR.account = user.getName();
                         locations.add(lR);
                     }
                     if (locations.contains(null)){

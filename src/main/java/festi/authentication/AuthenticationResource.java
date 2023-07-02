@@ -27,7 +27,7 @@ public class AuthenticationResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response authenticateUser(LoginReqeust logonReqeust){
         try {
-            System.out.println(User.getAllUsers());
+
             String role = User.validateLogin(logonReqeust.email, logonReqeust.password);
             if (role == null) throw new IllegalArgumentException("no user");
 

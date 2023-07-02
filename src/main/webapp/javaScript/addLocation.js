@@ -39,7 +39,6 @@ function loadStages() {
         .then(myJson => {
             const selector = document.querySelector("#stage");
             myJson.forEach(stage => {
-                console.log(stage)
                 const optionElement = document.createElement('option');
                 optionElement.textContent = stage.stageName;
                 optionElement.value = stage.stageName;
@@ -54,14 +53,10 @@ function loadStages() {
 
 function addLocation() {
     const form = document.querySelector("#locationform");
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-    checkboxes.forEach(function(checkbox) {
-        selectedGroups.push(checkbox.value);
-    });
-
     const body = {
-        stage: form.stage.value,
+        festival: form.festival.value,
         placing: form.placing.value,
+        stage: form.stage.value
     }
     const option = {
         method: 'POST',
@@ -71,6 +66,17 @@ function addLocation() {
         },
         body: JSON.stringify(body)
     }
+    fetch("/rest/location/add", option)
+        .then(response =>
+            console.log(response.json()))
+        .then(myJson => {
+            console.log(myJson)
+
+            window.location.href = "/locations.html"
+        })
+        .catch(error => {
+            console.log(error);
+        });
 
 }
 

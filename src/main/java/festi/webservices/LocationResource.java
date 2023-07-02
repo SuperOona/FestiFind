@@ -34,6 +34,7 @@ public class LocationResource {
                     Location location = new Location(stage);
                     location.setPlacing(Placing.valueOf(locationPush.placing));
                     current.setLocation(location);
+                    location.setAccount(current);
                     return Response.ok().build();
                 }
             }

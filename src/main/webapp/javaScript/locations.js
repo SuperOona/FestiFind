@@ -35,6 +35,10 @@ function loadAddLocationsPage(){
 document.addEventListener("DOMContentLoaded", loadLocations)
 document.addEventListener("DOMContentLoaded", function() {
     // Your code here, including the event listener
+    document.querySelector("#logout").addEventListener("click", (ev) =>{
+        window.sessionStorage.removeItem("myJWT");
+        window.location.href = "/index.html";
+    });
 
     document.querySelector("#addLocation").addEventListener("click", loadAddLocationsPage);
 });

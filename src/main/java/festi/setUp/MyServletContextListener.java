@@ -28,7 +28,9 @@ public class MyServletContextListener implements ServletContextListener {
         oona.addFriend(nick);
         oona.addFriend(daphne);
         daphne.addFriend(oona);
+        daphne.addFriend(nick);
         nick.addFriend(oona);
+        nick.addFriend(daphne);
         //make festval
         ArrayList<Date> dates = new ArrayList<>();
         dates.add(new Date(2024, 01, 18));
