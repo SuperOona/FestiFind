@@ -52,8 +52,31 @@ function loadStages() {
         });
 }
 
+function addLocation() {
+    const form = document.querySelector("#locationform");
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    checkboxes.forEach(function(checkbox) {
+        selectedGroups.push(checkbox.value);
+    });
+
+    const body = {
+        stage: form.stage.value,
+        placing: form.placing.value,
+    }
+    const option = {
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + window.sessionStorage.getItem("myJWT")
+        },
+        body: JSON.stringify(body)
+    }
+
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     loadPage();
     document.getElementById("festival").addEventListener("change", loadStages);
+    document.querySelector("#addLocation").addEventListener("click", addLocation);
 });
 
