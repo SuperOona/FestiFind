@@ -11,14 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/authentication/AuthenticationResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/setUp/MyServletContextListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/LocationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/LocationResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addLocations.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addLocations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/addLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/addLocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/locations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/locations.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/locations.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,6 +311,7 @@
       <workItem from="1687773557806" duration="1047000" />
       <workItem from="1687852844998" duration="135000" />
       <workItem from="1687853030390" duration="20030000" />
+      <workItem from="1688371596488" duration="2503000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>
@@ -509,14 +502,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688320798176</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add loaction works">
+      <option name="closed" value="true" />
+      <created>1688330806861</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1688330806861</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Project structure fix" />
     <MESSAGE value="Stage test not working" />
     <MESSAGE value="Implementing aunthentication" />
     <MESSAGE value="Aunthentication back-end fixes" />
@@ -541,6 +541,7 @@
     <MESSAGE value="getfriend front-end made" />
     <MESSAGE value="addLocation.js load works" />
     <MESSAGE value="LocationResource add works" />
-    <option name="LAST_COMMIT_MESSAGE" value="LocationResource add works" />
+    <MESSAGE value="add loaction works" />
+    <option name="LAST_COMMIT_MESSAGE" value="add loaction works" />
   </component>
 </project>

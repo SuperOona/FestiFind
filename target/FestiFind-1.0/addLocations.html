@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FestiFind</title>
+  <script src="/javaScript/addLocation.js"></script>
+  <link rel="stylesheet" href="style/add.css">
+  <link rel="icon" href="style/questionIcon.png">
+</head>
+<body>
+<main>
+  <h1>FestiFind</h1>
+  <div>
+    <form id="locationform">
+      <label for="festival">Festival:</label>
+      <select name="festival" id="festival">
+        <option>select one</option>
+      </select>
+      <label for="stage">Stage:</label>
+      <select name="stage" id="stage">
+        <option>select one</option>
+      </select>
+      <label for="placing">Placing:</label>
+      <select name="placing" id="placing">
+        <option value="FRONTLEFT">Front-left</option>
+        <option value="FRONT">Front-center</option>
+        <option value="FRONTRIGHT">Front-right</option>
+        <option value="LEFT">Center-left</option>
+        <option value="CENTERN">Center-center</option>
+        <option value="RIGHT">Center-right</option>
+        <option value="BACKLEFT">Back-left</option>
+        <option value="BACKRIGHT">Back-right</option>
+        <option value="BACKCENTERN">Back-center</option>
+      </select>
+      <input type="button" value="add" id="addLocation">
+    </form>
+  </div>
+
+</main>
+</body>
+</html>
