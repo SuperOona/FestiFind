@@ -10,15 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/festival.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/festival.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/request/FestivalRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/request/FestivalRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Festival.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Festival.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/FestivalResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/FestivalResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addFestival.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addFestival.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/addFestival.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/addFestival.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/festival.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/festival.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,8 +277,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FestivalResource" />
         <item itemvalue="Application.Festival" />
+        <item itemvalue="Application.FestivalResource" />
         <item itemvalue="Application.PersistenceManager" />
         <item itemvalue="JUnit.PersistenceManagerTest.loadUsersFromFileTest" />
         <item itemvalue="JUnit.UserTest.emailUnique" />
@@ -517,14 +512,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688382570299</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Add festival works">
+      <option name="closed" value="true" />
+      <created>1688390219131</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1688390219131</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Stage test not working" />
     <MESSAGE value="Implementing aunthentication" />
     <MESSAGE value="Aunthentication back-end fixes" />
     <MESSAGE value="Aunthentication front-end fixes" />
@@ -549,6 +551,7 @@
     <MESSAGE value="addLocation.js load works" />
     <MESSAGE value="LocationResource add works" />
     <MESSAGE value="Add festival back-end works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add festival back-end works" />
+    <MESSAGE value="Add festival works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add festival works" />
   </component>
 </project>

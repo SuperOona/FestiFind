@@ -1,7 +1,9 @@
 package festi.model;
 
+import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Objects;
 import java.util.UUID;
 
 
@@ -65,11 +67,19 @@ public class Festival {
         }
         return null;
     }
-   /* public static void main(String[] args) {
-        ArrayList<Date> dates = new ArrayList<>();
-        dates.add(new Date(2024, 01, 18));
-        System.out.println(createFestival("main", dates));
-        System.out.println(Festival.getAllFestivals());
-    }*/
+
+    public static boolean deleteFestival(String festId){
+        for (Festival festival : allFestivals){
+            if (Objects.equals(festival.getFestId(), festId)){
+                allFestivals.remove(festival);
+                return true;
+            }
+
+        }
+        return false;
+    }
+
+
+
 }
 

@@ -17,13 +17,19 @@ function loadFestivals(){
                 groupContainer.appendChild(groupNameE);
 
                 const festivalE = document.createElement('p');
-                festivalE.textContent = group.date;
+                let stamp = group.date;
+                stamp.forEach(time =>{
+                    let date = new Date(time);
+                    console.log(date)
+                    festivalE.textContent = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+                })
+
                 groupContainer.appendChild(festivalE);
 
-                /*const link = document.createElement('a');
-                link.href = `locations.html?groupID=${group.groupID}`;
-                link.textContent = 'See locations';
-                groupContainer.appendChild(link);*/
+                const link = document.createElement('a');
+                link.href = `rest/festival/delete/${group.festId}`;
+                link.textContent = 'Delete festival';
+                groupContainer.appendChild(link);
 
                 listHtml.appendChild(groupContainer);
             })

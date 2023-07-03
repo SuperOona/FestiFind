@@ -61,4 +61,14 @@ public class FestivalResource {
         return Response.status(404).entity("No user found").build();
     }
 
+    @DELETE
+    @Path("/delete/{fest}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response deleteFest(@PathParam("fest") String id){
+        if (deleteFestival(id)){
+            return Response.ok().build();
+        }
+        return Response.status(400).entity("Fest could not be deleted").build();
+    }
+
 }
