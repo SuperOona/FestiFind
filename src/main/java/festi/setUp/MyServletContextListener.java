@@ -44,9 +44,10 @@ public class MyServletContextListener implements ServletContextListener {
         //set location
         Location location = new Location(stage);
         Location location1 = new Location(alpha);
+        Location location2 = new Location(stage);
         location1.setPlacing(Placing.BACKCENTERN);
         location.setPlacing(Placing.CENTERN);
-        location.setAccount(oona);
+        location2.setAccount(oona);
         location.setAccount(daphne);
         location1.setAccount(nick);
         oona.setLocation(location);
