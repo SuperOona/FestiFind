@@ -49,6 +49,7 @@ public class FestivalResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response makeFestival(@Context SecurityContext context, FestivalRequest festivalRequest){
         if (context.getUserPrincipal() instanceof User){
+
             Festival festival = createFestival(festivalRequest.name, festivalRequest.dates);
             for (String stage : festivalRequest.stage){
                 Stage stage1 = new Stage(stage);

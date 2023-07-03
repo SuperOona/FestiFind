@@ -31,8 +31,6 @@ i
 9src/main/java/festi/authentication/MySecurityContext.java,f\b\fb747100586c693058830ebcbabc9905c84ffec6
 U
 %src/main/java/festi/model/Artist.java,3\7\37c9b467dc6786989500f763702a6149468fb16f
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 k
 ;src/test/java/festi/persistence/PersistenceManagerTest.java,f\c\fcca4ae2e2ab710aad0e0830c04c3a03adad8f92
 K

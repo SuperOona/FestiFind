@@ -10,12 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/festi/request/FestivalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/festival.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/festival.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Festival.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Festival.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/DashboardResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/festi/request/FestivalRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/request/FestivalRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/FestivalResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/FestivalResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addFestival.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addFestival.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/addFestival.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/addFestival.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +29,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -506,14 +509,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688320798176</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add festival back-end works">
+      <option name="closed" value="true" />
+      <created>1688382570298</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1688382570299</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Project structure fix" />
     <MESSAGE value="Stage test not working" />
     <MESSAGE value="Implementing aunthentication" />
     <MESSAGE value="Aunthentication back-end fixes" />
@@ -538,6 +548,7 @@
     <MESSAGE value="getfriend front-end made" />
     <MESSAGE value="addLocation.js load works" />
     <MESSAGE value="LocationResource add works" />
-    <option name="LAST_COMMIT_MESSAGE" value="LocationResource add works" />
+    <MESSAGE value="Add festival back-end works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add festival back-end works" />
   </component>
 </project>
