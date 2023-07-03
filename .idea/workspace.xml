@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/festi/model/Festival.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/model/Festival.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/festi/webservices/FestivalResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/festi/webservices/FestivalResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/festival.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/festival.js" afterDir="false" />
     </list>
@@ -520,14 +519,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688390219131</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Delete back works">
+      <option name="closed" value="true" />
+      <created>1688392597179</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1688392597179</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing aunthentication" />
     <MESSAGE value="Aunthentication back-end fixes" />
     <MESSAGE value="Aunthentication front-end fixes" />
     <MESSAGE value="Aunthentication works" />
@@ -552,6 +558,7 @@
     <MESSAGE value="LocationResource add works" />
     <MESSAGE value="Add festival back-end works" />
     <MESSAGE value="Add festival works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add festival works" />
+    <MESSAGE value="Delete back works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete back works" />
   </component>
 </project>

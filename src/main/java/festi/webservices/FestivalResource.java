@@ -63,8 +63,9 @@ public class FestivalResource {
 
     @DELETE
     @Path("/delete/{fest}")
+    @RolesAllowed("admin")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response deleteFest(@PathParam("fest") String id){
+    public Response deleteFest(@Context SecurityContext context, @PathParam("fest") String id){
         if (deleteFestival(id)){
             return Response.ok().build();
         }

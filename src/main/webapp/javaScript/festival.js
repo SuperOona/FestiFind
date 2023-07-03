@@ -20,17 +20,19 @@ function loadFestivals(){
                 let stamp = group.date;
                 stamp.forEach(time =>{
                     let date = new Date(time);
-                    console.log(date)
                     festivalE.textContent = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
                 })
-
                 groupContainer.appendChild(festivalE);
 
-                const link = document.createElement('a');
-                link.href = `rest/festival/delete/${group.festId}`;
-                link.textContent = 'Delete festival';
-                groupContainer.appendChild(link);
 
+                const butt = document.createElement("input");
+                butt.type = "button"
+                butt.value = "Delete"
+                butt.id = "delete"
+                butt.addEventListener("click", () =>{
+                    deleteFest(group.festId);
+                })
+                groupContainer.appendChild(butt)
                 listHtml.appendChild(groupContainer);
             })
         }).catch(error => {
@@ -43,6 +45,23 @@ document.addEventListener("DOMContentLoaded", loadFestivals);
 
 function loadAddFestPage(){
     window.location.href = "addFestival.html";
+}
+function deleteFest(festId){
+    const option = {
+        method: 'DELETE',
+        headers:{
+            'Authorization': 'Bearer ' + window.sessionStorage.getItem("myJWT")
+        }
+    }
+    fetch(`rest/festival/delete/${festId}`, option)
+        .then(response => {
+            if (response.ok){
+                document.location.href = "/festival.html"
+            }
+        })
+        .catch(error => {
+            console.log(error)
+        })
 }
 
 document.addEventListener("DOMContentLoaded", function() {
