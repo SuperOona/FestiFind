@@ -3,7 +3,6 @@ package festi.model;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.UUID;
-import festi.model.Stage;
 
 
 public class Festival {
