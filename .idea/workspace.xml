@@ -21,10 +21,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -274,8 +274,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FestivalResource" />
         <item itemvalue="Application.Festival" />
+        <item itemvalue="Application.FestivalResource" />
         <item itemvalue="Application.PersistenceManager" />
         <item itemvalue="JUnit.PersistenceManagerTest.loadUsersFromFileTest" />
         <item itemvalue="JUnit.UserTest.emailUnique" />
@@ -311,7 +311,6 @@
       <workItem from="1687773557806" duration="1047000" />
       <workItem from="1687852844998" duration="135000" />
       <workItem from="1687853030390" duration="20030000" />
-      <workItem from="1688371596488" duration="2503000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure">
       <created>1684961362349</created>
@@ -502,26 +501,61 @@
       <option name="project" value="LOCAL" />
       <updated>1688320798176</updated>
     </task>
-    <task id="LOCAL-00026" summary="add loaction works">
+    <task id="LOCAL-00026" summary="Add festival back-end works">
       <option name="closed" value="true" />
-      <created>1688330806861</created>
+      <created>1688382570298</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1688330806861</updated>
+      <updated>1688382570299</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Add festival works">
+      <option name="closed" value="true" />
+      <created>1688390219131</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1688390219131</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Delete back works">
+      <option name="closed" value="true" />
+      <created>1688392597179</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1688392597179</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Delete works">
+      <option name="closed" value="true" />
+      <created>1688396958311</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1688396958311</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Admin login works">
+      <option name="closed" value="true" />
+      <created>1688397854506</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1688397854506</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Css update and fix location in test data">
+      <option name="closed" value="true" />
+      <created>1688400656430</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1688400656430</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Stage test not working" />
-    <MESSAGE value="Implementing aunthentication" />
-    <MESSAGE value="Aunthentication back-end fixes" />
-    <MESSAGE value="Aunthentication front-end fixes" />
-    <MESSAGE value="Aunthentication works" />
     <MESSAGE value="PersistenceManagerTest for user" />
     <MESSAGE value="PersistenceManager laad niet de users" />
     <MESSAGE value="CreateUser made" />
@@ -541,7 +575,12 @@
     <MESSAGE value="getfriend front-end made" />
     <MESSAGE value="addLocation.js load works" />
     <MESSAGE value="LocationResource add works" />
-    <MESSAGE value="add loaction works" />
-    <option name="LAST_COMMIT_MESSAGE" value="add loaction works" />
+    <MESSAGE value="Add festival back-end works" />
+    <MESSAGE value="Add festival works" />
+    <MESSAGE value="Delete back works" />
+    <MESSAGE value="Delete works" />
+    <MESSAGE value="Admin login works" />
+    <MESSAGE value="Css update and fix location in test data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Css update and fix location in test data" />
   </component>
 </project>

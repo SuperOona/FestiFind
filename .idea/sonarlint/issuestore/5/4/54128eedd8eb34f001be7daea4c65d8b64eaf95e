@@ -1,0 +1,13 @@
+
+’
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ß×Éúÿÿÿÿ8Óà‘1
+‡
+java:S1319"eThe type of "dates" should be an interface such as "List" rather than the implementation "ArrayList".(ºô¿’ÿÿÿÿÿ8ŸÓà‘1
+’
+java:S1319."pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(«“Ñ¡úÿÿÿÿ8ŸÓà‘1
+
+java:S13192"dThe type of "date" should be an interface such as "List" rather than the implementation "ArrayList".(¨ÑÍü8ŸÓà‘1
+’
+java:S13196"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ùğ±ûÿÿÿÿ8ŸÓà‘1
+X
+java:S1128"6Remove this unused import 'javax.ws.rs.core.Response'.(ˆäĞæüÿÿÿÿ8ÆÓà‘1

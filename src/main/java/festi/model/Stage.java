@@ -1,6 +1,7 @@
 package festi.model;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.UUID;
 
 public class Stage{
@@ -13,6 +14,13 @@ public class Stage{
         this.stageName = stageName;
         this.artists = artists;
     }
+
+    public Stage( String stageName) {
+        this.stageId = UUID.randomUUID().toString();
+        this.stageName = stageName;
+
+    }
+
 
 
     public String getStageId() {

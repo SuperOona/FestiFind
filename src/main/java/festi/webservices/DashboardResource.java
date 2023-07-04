@@ -21,7 +21,6 @@ public class DashboardResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response getLocations(@Context SecurityContext context){
         if (context.getUserPrincipal() instanceof User current){
-            System.out.println(current.getName());
                 List<User> friends = current.getFriends();
                 if (!friends.isEmpty()){
                     List<LocationRequest> locations = new ArrayList<>();

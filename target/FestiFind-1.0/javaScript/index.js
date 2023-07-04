@@ -1,13 +1,15 @@
 function login(){
-    let formData = new FormData(document.querySelector("#loginform"))
-    let jsonBody = {}
-    formData.forEach((value, key) => jsonBody[key] = value);
+    let formData = document.querySelector("#loginform")
+    let jsonBody = {
+        email: formData.email.value,
+        password: formData.password.value
+    }
+
     const option = {
         method: 'POST',
         headers:{'Content-Type': 'application/json'},
         body: JSON.stringify(jsonBody)
     }
-    console.log(jsonBody)
     fetch("/rest/authentication", option)
         .then(function (response) {
             if (response.ok){
@@ -16,8 +18,14 @@ function login(){
             throw new Error("Wrong email/password");
         })
         .then(myJson => {
+            console.log(formData.email.value)
             window.sessionStorage.setItem("myJWT", myJson.JWT);
-            window.location.href = "/locations.html"
+            if (formData.email.value === 'admin@festifind.nl'){
+                window.location.href = "/festival.html"
+            } else {
+                window.location.href = "/locations.html"
+            }
+
         })
         .catch(error => console.log(error));
 }

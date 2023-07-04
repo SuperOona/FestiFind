@@ -1,0 +1,12 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(•Ϋ¦«8Η’δ‘1
+I
+java:S1874$",Remove this use of "Date"; it is deprecated.(ρέσ’8¬Η’δ‘1
+X	java:S125C"<This block of commented-out lines of code should be removed.(½‘Ρ³8°Η’δ‘1
+U	java:S106T"9Replace this use of System.out or System.err by a logger.(ΰΊνΠ8°Η’δ‘1
+X	java:S125O"<This block of commented-out lines of code should be removed.(½‘Ρ³8±Η’δ‘1
+]
+java:S1128"ARemove this unused import 'festi.persistence.PersistenceManager'.(ώ¤ρ8±Η’δ‘1
+R
+java:S1128
+"0Remove this unused import 'java.io.IOException'.(ªΊ»Ϊύÿÿÿÿ8±Η’δ‘1

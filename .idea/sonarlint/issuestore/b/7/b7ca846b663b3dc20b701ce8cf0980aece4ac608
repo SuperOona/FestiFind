@@ -1,0 +1,9 @@
+
+f
+java:S2583#"DChange this condition so that it does not always evaluate to "false"(ªÉáÃıÿÿÿÿ8—»íß‘1
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(İïî¹şÿÿÿÿ8›»íß‘1
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(²İØÒüÿÿÿÿ8œ»íß‘1
+Q
+java:S1128"/Remove this unused import 'festi.model.Artist'.(ñ‹˜ÿÿÿÿÿÿ8Å‹Šà‘1
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8Å‹Šà‘1

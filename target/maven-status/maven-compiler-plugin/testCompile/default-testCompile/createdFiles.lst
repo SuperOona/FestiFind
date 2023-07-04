@@ -1,0 +1,4 @@
+festi\model\LocationTest.class
+festi\model\UserTest.class
+festi\model\StageTest.class
+festi\persistence\PersistenceManagerTest.class
