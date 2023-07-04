@@ -1,0 +1,12 @@
+
+‚
+java:S1319"eThe type of "dates" should be an interface such as "List" rather than the implementation "ArrayList".(ªÂõ’8ñØ²Ş‘1
+‡
+java:S1319"eThe type of "stage" should be an interface such as "List" rather than the implementation "ArrayList".(Òˆ‡¹ÿÿÿÿÿ8ñØ²Ş‘1
+m
+java:S1104
+"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾8òØ²Ş‘1
+n
+java:S1104"QMake dates a static final constant or non-public and provide accessors if needed.(ªÂõ’8òØ²Ş‘1
+s
+java:S1104"QMake stage a static final constant or non-public and provide accessors if needed.(Òˆ‡¹ÿÿÿÿÿ8òØ²Ş‘1

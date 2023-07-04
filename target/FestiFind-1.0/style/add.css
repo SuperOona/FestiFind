@@ -1,0 +1,95 @@
+@import "variables.css";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-background);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div {
+    background-color: var(--second-background);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 250px;
+    width: 100%;
+}
+
+#container {
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    max-width: 250px;
+    width: 100%;
+}
+
+fieldset{
+    border-color: var(--lettering);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    padding: 10px;
+    background-color: black;
+    color: var(--primary-background);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: var(--active-button);
+}
+
+input[type="button"]:active,
+input[type="submit"]:active {
+    background-color: var(--active-button);
+}
+
+input[type="button"]:focus,
+input[type="submit"]:focus {
+    outline: none;
+}

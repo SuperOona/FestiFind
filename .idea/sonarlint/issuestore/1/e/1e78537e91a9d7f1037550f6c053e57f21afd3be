@@ -1,0 +1,12 @@
+
+b	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(Óİñ8Ø‘Õ¤1
+u
+java:S2293@"YReplace the type specification in this constructor call with the diamond operator ("<>").(Šâ·8Ú‘Õ¤1
+
+java:S1319w"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Š„Ó›8Ú‘Õ¤1
+„
+java:S1319{"gThe type of "friends" should be an interface such as "List" rather than the implementation "ArrayList".(È„½ú8Û‘Õ¤1
+~
+java:S4144„"[Update this method so that its implementation is not identical to "getUsername" on line 89.(ú›Šøøÿÿÿÿ8ö‘Õ¤1
+Z	java:S106b"9Replace this use of System.out or System.err by a logger.(—ü¯Âşÿÿÿÿ8†’Õ¤1
+Z	java:S106c"9Replace this use of System.out or System.err by a logger.(‘¡úÿÿÿÿ8†’Õ¤1

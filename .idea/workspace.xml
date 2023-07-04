@@ -11,13 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8515d44d-4528-4865-aab3-e504f0417878" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createuser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/festival.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/festival.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javaScript/festival.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javaScript/festival.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/locations.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/locations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/add.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -548,14 +541,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688397854506</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Css update and fix location in test data">
+      <option name="closed" value="true" />
+      <created>1688400656430</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1688400656430</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Aunthentication works" />
     <MESSAGE value="PersistenceManagerTest for user" />
     <MESSAGE value="PersistenceManager laad niet de users" />
     <MESSAGE value="CreateUser made" />
@@ -580,6 +580,7 @@
     <MESSAGE value="Delete back works" />
     <MESSAGE value="Delete works" />
     <MESSAGE value="Admin login works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin login works" />
+    <MESSAGE value="Css update and fix location in test data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Css update and fix location in test data" />
   </component>
 </project>
